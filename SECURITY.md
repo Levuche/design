@@ -14,7 +14,7 @@ Only the Levuche maintainers can see a private report. Please don't open a publi
 
 ## What to include
 
-- What the problem is and where it happens (a repository, a page on levuche.com, or a creator site on levuche.page)
+- What the problem is and where it happens (a repository, a page on levuche.com or app.levuche.com, or a creator site on levuche.page)
 - Steps to reproduce it
 - What an attacker could do with it
 - Any proof of concept, screenshots or logs that help
@@ -25,7 +25,7 @@ We'll acknowledge your report in the private advisory, keep you updated there wh
 
 ## Scope
 
-This policy covers Levuche's own repositories, levuche.com and creator sites on levuche.page.
+This policy covers Levuche's own repositories, levuche.com, app.levuche.com and creator sites on levuche.page.
 
 Levuche uses BuildBase as a third-party service for products, checkout, files and some account screens. Problems in BuildBase itself should go to BuildBase. If you're not sure which side a problem belongs to, report it here and we'll pass it on.
 
