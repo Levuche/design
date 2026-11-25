@@ -92,4 +92,4 @@ Use this when putting the brand kit live. Tick each line on every site and app s
 ## After launch
 
 - [ ] Claim @levuche on Instagram, X, TikTok, YouTube, LinkedIn and Facebook
-- [ ] Have a trademark lawyer run a full India and US search and file (see `trademark-check.md`)
+- [ ] Have a trademark lawyer run a full India and US search and file
