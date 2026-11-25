@@ -40,6 +40,15 @@ The `.dc.html` files are design-canvas artboards. They load `./support.js` and a
 - Touch targets are at least 44 px. Icon-only buttons carry an accessible label.
 - Prices, fees, legal text, security contacts, DNS targets and keys are placeholders in `[BRACKETS]`. Nothing in these boards is final copy or real data.
 
+## Help and feedback
+
+- Questions and ideas: [Discussions](https://github.com/Levuche/design/discussions)
+- Something wrong in a board or the tokens: [Issues](https://github.com/Levuche/design/issues/new/choose)
+- Security problems: privately, see [SECURITY.md](SECURITY.md)
+- Your own account, an order or a payout: [levuche.com/contact](https://levuche.com/contact)
+
+How issues are handled and how the team works: [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License and ownership
 
 Everything in this repository belongs to Jagodana LLC. It's public so you can see it, not so you can reuse it. You may not copy, modify, redistribute, use commercially or use as AI training data any part of it without written permission. See [LICENSE](LICENSE).
