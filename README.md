@@ -13,12 +13,12 @@ canvas/            Every artboard from the Levuche design canvas, plus its index
   canvas.json      Board positions, titles, pages and notes
   *.dc.html        One artboard each, in light and dark
 tokens/
-  levuche-tokens.css   Design tokens v1.0 (--lv-* for product UI, --site-* for creator sites)
+  levuche-tokens.css   Design tokens v1.1 (--lv-* for product UI, --site-* for creator sites)
 brand/             Brand kit: logo, favicon set, social images, brand guide,
                    Sora font files and the levuche.com rollout checklist
 ```
 
-The `.dc.html` files are design-canvas artboards. They load `./support.js` and a stylesheet at `/_blob/16490de4fd085992f4b80feb1a7e5129`, which the canvas serves; that stylesheet is the same file as `tokens/levuche-tokens.css`.
+The `.dc.html` files are design-canvas artboards. They load `./support.js` and a stylesheet at `/_blob/4d3230c7f0c56e1f37d88a4aaef2bc1b`, which the canvas serves; that stylesheet is the same file as `tokens/levuche-tokens.css`.
 
 ## Boards by page
 
