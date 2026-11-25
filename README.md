@@ -2,7 +2,9 @@
 
 Design source for Levuche, a site builder for creators. A creator claims `handle.levuche.page`, picks a layout, sets their brand, and sells or showcases packs from their social accounts. The marketing site is levuche.com.
 
-Levuche is its own product, a Jagodana product. It uses BuildBase as a third-party service for products, checkout, files and some account screens. Where a board says "Opens BuildBase", that screen belongs to the third-party service and is not redesigned here.
+Levuche is a product managed by Jagodana LLC ([jagodana.com](https://jagodana.com)), founded by Dharmendra Jagodana.
+
+Levuche is its own product, separate from BuildBase. It uses BuildBase as a third-party service for products, checkout, files and some account screens. Where a board says "Opens BuildBase", that screen belongs to the third-party service and is not redesigned here.
 
 ## What's here
 
