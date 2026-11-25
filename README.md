@@ -14,6 +14,8 @@ canvas/            Every artboard from the Levuche design canvas, plus its index
   *.dc.html        One artboard each, in light and dark
 tokens/
   levuche-tokens.css   Design tokens v1.0 (--lv-* for product UI, --site-* for creator sites)
+brand/             Brand kit: logo, favicon set, social images, brand guide,
+                   Sora font files and the levuche.com rollout checklist
 ```
 
 The `.dc.html` files are design-canvas artboards. They load `./support.js` and a stylesheet at `/_blob/16490de4fd085992f4b80feb1a7e5129`, which the canvas serves; that stylesheet is the same file as `tokens/levuche-tokens.css`.
@@ -37,3 +39,15 @@ The `.dc.html` files are design-canvas artboards. They load `./support.js` and a
 - Every screen ships in light and dark.
 - Touch targets are at least 44 px. Icon-only buttons carry an accessible label.
 - Prices, fees, legal text, security contacts, DNS targets and keys are placeholders in `[BRACKETS]`. Nothing in these boards is final copy or real data.
+
+## License and ownership
+
+Everything in this repository belongs to Jagodana LLC. It's public so you can see it, not so you can reuse it. You may not copy, modify, redistribute, use commercially or use as AI training data any part of it without written permission. See [LICENSE](LICENSE).
+
+Levuche™ and the Levuche logo are trademarks of Jagodana LLC. See [TRADEMARKS.md](TRADEMARKS.md).
+
+The Sora font files in `brand/fonts/` are third-party and stay under the SIL Open Font License 1.1 ([brand/fonts/OFL.txt](brand/fonts/OFL.txt)).
+
+For permission, contact Jagodana LLC through [jagodana.com](https://jagodana.com).
+
+© 2026 Jagodana LLC. All rights reserved.
