@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche molecules</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1600px; height: 2700px; box-sizing: border-box; display: flex; gap: 40px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="flex: 1; min-width: 0; background: var(--lv-bg); color: var(--lv-text); border: 1px solid var(--lv-border); border-radius: 24px; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
+  <h2 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">{{m.label}}</h2>
+
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <h3 style="margin: 0; font-size: 17px">Form field and error</h3>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="h-{{m.id}}" style="font-size: 14px; font-weight: 600">Handle</label>
+      <input id="h-{{m.id}}" type="text" value="desiorigins" style="min-height: 48px; padding: 0 14px; border: 2px solid var(--lv-border); border-radius: 12px; font: inherit; font-size: 15px; color: var(--lv-text); background: var(--lv-bg)">
+      <p style="margin: 0; font-size: 13px; color: var(--lv-text-3)">Your site: desiorigins.levuche.page</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="e-{{m.id}}" style="font-size: 14px; font-weight: 600">Handle</label>
+      <input id="e-{{m.id}}" type="text" aria-invalid="true" value="desi origins" style="min-height: 48px; padding: 0 14px; border: 2px solid var(--lv-danger); border-radius: 12px; font: inherit; font-size: 15px; color: var(--lv-text); background: var(--lv-bg)">
+      <p style="margin: 0; font-size: 13px; color: var(--lv-danger); font-weight: 600">Spaces aren’t allowed. Try desi-origins.</p>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <h3 style="margin: 0; font-size: 17px">Email signup and search</h3>
+    <form style="display: flex; flex-wrap: wrap; gap: 10px" onsubmit="return false"><label for="s-{{m.id}}" style="position: absolute; left: -9999px">Email</label><input id="s-{{m.id}}" type="email" placeholder="you@email.com" style="flex: 1 1 200px; min-height: 48px; padding: 0 16px; border: 2px solid var(--lv-border); border-radius: 999px; font: inherit; font-size: 15px; color: var(--lv-text); background: var(--lv-bg)"><button type="submit" style="min-height: 48px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--lv-accent); color: var(--lv-on-accent); font: inherit; font-weight: 700">Join the beta</button></form>
+    <div style="display: flex; align-items: center; gap: 10px; border: 2px solid var(--lv-border); border-radius: 12px; padding: 0 12px; background: var(--lv-bg)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color: var(--lv-text-3)"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg><label for="q-{{m.id}}" style="position: absolute; left: -9999px">Search sections</label><input id="q-{{m.id}}" type="search" placeholder="Search sections" style="flex: 1; min-height: 44px; border: 0; font: inherit; font-size: 15px; color: var(--lv-text); background: transparent"></div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <h3 style="margin: 0; font-size: 17px">Segmented control and tabs</h3>
+    <div role="group" aria-label="Preview size" style="display: inline-flex; align-self: flex-start; gap: 4px; background: var(--lv-surface-2); border-radius: 12px; padding: 4px">
+      <button type="button" aria-pressed="true" style="border: 0; background: var(--lv-card); border-radius: 9px; padding: 0 14px; min-height: 40px; font: inherit; font-size: 13px; font-weight: 600; color: var(--lv-text)">Phone</button>
+      <button type="button" aria-pressed="false" style="border: 0; background: transparent; border-radius: 9px; padding: 0 14px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Tablet</button>
+      <button type="button" aria-pressed="false" style="border: 0; background: transparent; border-radius: 9px; padding: 0 14px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Desktop</button>
+    </div>
+    <div role="tablist" aria-label="Inbox" style="display: flex; gap: 24px; border-bottom: 1px solid var(--lv-border)">
+      <button type="button" role="tab" aria-selected="true" style="border: 0; border-bottom: 3px solid var(--lv-primary); background: transparent; padding: 10px 0; min-height: 44px; font: inherit; font-size: 15px; font-weight: 600; color: var(--lv-text)">Contact <span style="font-variant-numeric: tabular-nums; color: var(--lv-text-3)">4</span></button>
+      <button type="button" role="tab" aria-selected="false" style="border: 0; border-bottom: 3px solid transparent; background: transparent; padding: 10px 0; min-height: 44px; font: inherit; font-size: 15px; color: var(--lv-text-2)">Newsletter <span style="font-variant-numeric: tabular-nums; color: var(--lv-text-3)">213</span></button>
+      <button type="button" role="tab" aria-selected="false" style="border: 0; border-bottom: 3px solid transparent; background: transparent; padding: 10px 0; min-height: 44px; font: inherit; font-size: 15px; color: var(--lv-text-2)">Waitlist <span style="font-variant-numeric: tabular-nums; color: var(--lv-text-3)">38</span></button>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0 0 4px; font-size: 17px">List rows</h3>
+    <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--lv-border)"><span style="width: 48px; height: 48px; border-radius: 10px; background: var(--lv-surface-2); flex: none"></span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Origins reel pack</span><span style="font-size: 13px; color: var(--lv-text-3)">3 files · release 1.2</span></span><span style="font-weight: 700; font-variant-numeric: tabular-nums">$12.00</span></div>
+    <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Priya S.</span><span style="font-size: 13px; color: var(--lv-text-2)">Is the scripting guide in Hindi too?</span></span><span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">New</span></div>
+    <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--lv-border); font-size: 14px"><span style="flex: 1"><strong>v11</strong> <span style="color: var(--lv-text-3)">18 Nov, 21:40 · Added FAQ</span></span><a href="#" style="font-weight: 600; color: var(--lv-link)">Make live</a></div>
+    <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; font-size: 14px"><span style="flex: 1; font-weight: 600">/go/salt</span><span style="font-variant-numeric: tabular-nums; color: var(--lv-text-2)">642 clicks · 19 sales</span></div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0 0 4px; font-size: 17px">Alerts and empty state</h3>
+    <div role="status" style="display: flex; gap: 10px; align-items: center; background: var(--lv-success-bg); color: var(--lv-success); border-radius: 12px; padding: 12px 14px; font-size: 14px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Version 13 is live.</div>
+    <div role="status" style="display: flex; gap: 10px; align-items: center; background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); border-radius: 12px; padding: 12px 14px; font-size: 14px; font-weight: 600">Your draft has 3 unpublished changes.</div>
+    <div role="alert" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; border: 2px solid var(--lv-danger-border); color: var(--lv-danger); border-radius: 12px; padding: 12px 14px; font-size: 14px; font-weight: 600">Couldn’t publish: the refund policy is empty.<a href="#" style="color: var(--lv-danger)">Open policy</a></div>
+    <div style="border: 2px dashed var(--lv-border); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center"><p style="margin: 0; font-weight: 700">No messages yet</p><p style="margin: 0; font-size: 14px; color: var(--lv-text-2)">Add a contact form to your site to start receiving them.</p><a href="#" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 10px 18px; border-radius: 999px; font-size: 14px">Add contact page</a></div>
+  </section>
+
+  <section data-site="{{m.id}}" style="background: var(--site-bg); color: var(--site-text); border: 1px solid var(--site-border); border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+    <h3 style="margin: 0; font-size: 17px">Creator kit (creator’s brand)</h3>
+    <div style="display: flex; gap: 12px; align-items: center; background: var(--site-surface); border-radius: 16px; padding: 12px"><span style="width: 52px; height: 52px; border-radius: 12px; background: var(--site-surface-2); flex: none"></span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">Prompt starter kit</span><span style="font-size: 13px; color: var(--site-text-2)">50 prompts</span></span><span style="font-weight: 700; font-variant-numeric: tabular-nums">$7</span></div>
+    <a href="#" style="text-decoration: none; color: var(--site-text); background: var(--site-surface); border-radius: 16px; padding: 12px; display: flex; gap: 12px; align-items: center; min-height: 56px"><span style="width: 40px; height: 40px; border-radius: 10px; background: var(--site-surface-2)"></span><span style="font-weight: 600">YouTube channel</span></a>
+    <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.5; color: var(--site-text-2)"><input type="checkbox" required style="width: 22px; height: 22px; margin: 0; accent-color: var(--site-accent); flex: none">I want to download now and understand I lose my 14-day right to cancel.</label>
+    <button type="button" style="min-height: 52px; border: 0; border-radius: 999px; background: var(--site-accent); color: var(--site-on-accent); font: inherit; font-weight: 700">I’ll take it, $12</button>
+  </section>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2700}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>

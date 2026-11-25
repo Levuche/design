@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche templates</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1600px; height: 2800px; box-sizing: border-box; display: flex; gap: 40px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="flex: 1; min-width: 0; background: var(--lv-bg); color: var(--lv-text); border: 1px solid var(--lv-border); border-radius: 24px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px; font-size: 12px">
+  <h2 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">{{m.label}}</h2>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0; font-size: 17px">Marketing home</h3>
+    <div style="border: 2px solid var(--lv-border); border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px; color: var(--lv-text-2)">
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Header: logo · 3 links · Sign in · primary button</div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px"><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 10px; min-height: 110px">Hero: headline ≤ 40 chars, 2 lines max · body ≤ 140 chars · email signup</div><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 10px; min-height: 110px">Product preview, phone 9:19</div></div>
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Steps: 3 items · title ≤ 24 chars · text ≤ 100 chars</div>
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Feature list: 4–6 rows, 2 columns · title ≤ 28 · text ≤ 60</div>
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Pricing: price · 4 bullets · button</div>
+      <div style="background: var(--lv-brand); color: var(--lv-on-brand); border-radius: 8px; padding: 8px">Closing band: line ≤ 30 chars · button</div>
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Footer: owner line · legal links</div>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0; font-size: 17px">Dashboard</h3>
+    <div style="border: 2px solid var(--lv-border); border-radius: 16px; padding: 12px; display: flex; gap: 8px; color: var(--lv-text-2); min-height: 220px">
+      <div style="background: var(--lv-brand); color: var(--lv-on-brand); border-radius: 8px; padding: 8px; width: 28%">Sidebar: site switcher · 8 nav items · BuildBase links</div>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 8px"><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Header: site name ≤ 32 · status badges · 2 actions</div><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Summary strip: period · 4 figures, tabular</div><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; flex: 1"><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Table: 5–10 rows, scrolls on phone</div><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Next actions: 3–5 rows · empty state</div></div></div>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0; font-size: 17px">Editor</h3>
+    <div style="border: 2px solid var(--lv-border); border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px; color: var(--lv-text-2)">
+      <div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Toolbar: back · site · page picker · save state · device toggle · undo/redo · preview · publish</div>
+      <div style="display: grid; grid-template-columns: 1fr 1.6fr 1fr; gap: 8px; min-height: 160px"><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Insert: tabs · search · grouped tiles</div><div style="background: var(--lv-canvas); border: 1px dashed var(--lv-border); border-radius: 8px; padding: 8px">Preview in creator brand · selection outline · drop zone · publish panel</div><div style="background: var(--lv-surface-2); border-radius: 8px; padding: 8px">Properties: layout · data · motion · remove</div></div>
+      <p style="margin: 0">Phone: preview first, Insert and Properties stack below.</p>
+    </div>
+  </section>
+
+  <section data-site="{{m.id}}" style="display: flex; flex-direction: column; gap: 10px">
+    <h3 style="margin: 0; font-size: 17px; color: var(--lv-text)">Creator site home and pack page</h3>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+      <div style="border: 2px solid var(--site-border); background: var(--site-bg); color: var(--site-text-2); border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 6px">
+        <div style="background: var(--site-notice); color: var(--site-on-notice); border-radius: 6px; padding: 6px">In-app bar (Instagram only)</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Header: avatar · name ≤ 24 · nav</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px; min-height: 60px">Hero: headline ≤ 40 · bio ≤ 120 · socials · featured pack</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Pack grid: 1–9 cards, image 4:3</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Reel grid: 9:16, title ≤ 32</div>
+        <div style="background: var(--site-band); color: var(--site-on-band); border-radius: 6px; padding: 6px">Newsletter band</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">FAQ · footer with legal links</div>
+      </div>
+      <div style="border: 2px solid var(--site-border); background: var(--site-bg); color: var(--site-text-2); border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 6px">
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Back · share</div>
+        <div style="background: var(--site-surface-2); border-radius: 6px; padding: 6px; min-height: 70px">Cover 4:3</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Title ≤ 48 · summary ≤ 140 · price</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">What’s inside: 3–8 items</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">How it’s made ≤ 300 chars</div>
+        <div style="background: var(--site-accent); color: var(--site-on-accent); border-radius: 6px; padding: 6px">EU consent · buy button</div>
+        <div style="background: var(--site-surface); border-radius: 6px; padding: 6px">Pack terms line</div>
+      </div>
+    </div>
+  </section>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":2800}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>

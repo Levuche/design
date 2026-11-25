@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche dashboard home</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div data-lv="{{mode}}" style="font-family: Sora, 'Helvetica Neue', Arial, sans-serif; color: var(--lv-text); background: var(--lv-surface); min-height: 100%; display: flex; flex-wrap: wrap">
+
+<aside style="flex: 1 1 248px; background: var(--lv-brand); color: var(--lv-on-brand); padding: 20px 16px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+  <div style="display: flex; align-items: center; gap: 10px; padding: 0 6px">
+    <svg width="34" height="34" viewBox="110 100 290 320" role="img" aria-label="Levuche"><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+    <span style="font-size: 22px; font-weight: 700">levuche</span>
+  </div>
+  <button type="button" style="display: flex; align-items: center; gap: 10px; background: var(--lv-brand-2); border: 0; border-radius: 14px; padding: 12px; color: var(--lv-on-brand); font: inherit; text-align: left; cursor: pointer; min-height: 56px">
+    <span style="width: 32px; height: 32px; border-radius: 50%; background: var(--lv-accent); color: var(--lv-on-accent); font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px">DO</span>
+    <span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 14px">Desi Origins</span><span style="font-size: 12px; opacity: 0.8">Switch site</span></span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 10l5 5 5-5"></path></svg>
+  </button>
+  <nav aria-label="Dashboard" style="display: flex; flex-direction: column; gap: 2px; font-size: 15px">
+    <a href="#" aria-current="page" style="text-decoration: none; color: var(--lv-on-accent); background: var(--lv-accent); border-radius: 12px; padding: 12px 14px; font-weight: 600">Overview</a>
+    <a href="Editor.dc.html" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Edit site</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Pages</a>
+    <a href="Inbox.dc.html" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Inbox and short links</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Products and files</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Sales</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Brand and theme</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Handle and domain</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-on-brand); padding: 12px 14px; border-radius: 12px">Team and billing</a>
+  </nav>
+  <p style="margin: auto 0 0; font-size: 12px; opacity: 0.8; padding: 0 6px">Products, sales, team and billing open BuildBase screens.</p>
+</aside>
+
+<main style="flex: 999 1 560px; min-width: 0; padding: clamp(20px, 3vw, 32px) clamp(16px, 3vw, 40px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+  <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <h1 style="margin: 0; font-size: clamp(26px, 3vw, 32px); letter-spacing: -0.5px">Desi Origins</h1>
+      <p style="margin: 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 15px; color: var(--lv-text-2)">
+        <a href="#" style="color: var(--lv-link)">desiorigins.levuche.page</a>
+        <span style="background: var(--lv-success-bg); color: var(--lv-success); font-weight: 600; font-size: 13px; padding: 4px 10px; border-radius: 999px">Live, version 12</span>
+        <span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-weight: 600; font-size: 13px; padding: 4px 10px; border-radius: 999px">Draft has changes</span>
+      </p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; padding: 12px 20px; border-radius: 999px">View live</a>
+      <a href="Editor.dc.html" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 14px 22px; border-radius: 999px">Edit site</a>
+    </div>
+  </div>
+
+  <p style="margin: 0; background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 16px; padding: 16px 20px; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 15px; color: var(--lv-text-2); font-variant-numeric: tabular-nums"><span>Last 7 days</span><span><strong style="color: var(--lv-text)">1,284</strong> views</span><span><strong style="color: var(--lv-text)">642</strong> link clicks</span><span><strong style="color: var(--lv-text)">31</strong> sales</span><span><strong style="color: var(--lv-text)">$372</strong> revenue</span><span><strong style="color: var(--lv-text)">4</strong> new messages</span></p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px">
+    <section style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><h2 style="margin: 0; font-size: 19px">Sales by page version</h2><a href="#" style="font-size: 14px; color: var(--lv-link)">All sales</a></div>
+      <div style="overflow-x: auto">
+        <table style="width: 100%; min-width: 420px; border-collapse: collapse; font-size: 14px">
+          <thead><tr style="text-align: left; color: var(--lv-text-3)"><th style="padding: 10px 8px; font-weight: 600">Pack</th><th style="padding: 10px 8px; font-weight: 600">Version</th><th style="padding: 10px 8px; font-weight: 600">From</th><th style="padding: 10px 8px; font-weight: 600">Amount</th></tr></thead>
+          <tbody>
+            <tr style="border-top: 1px solid var(--lv-border)"><td style="padding: 12px 8px">Origins reel pack</td><td style="padding: 12px 8px">v12</td><td style="padding: 12px 8px">Instagram bio</td><td style="padding: 12px 8px; font-variant-numeric: tabular-nums">$12.00</td></tr>
+            <tr style="border-top: 1px solid var(--lv-border)"><td style="padding: 12px 8px">Prompt starter kit</td><td style="padding: 12px 8px">v11</td><td style="padding: 12px 8px">Reel caption link</td><td style="padding: 12px 8px; font-variant-numeric: tabular-nums">$7.00</td></tr>
+            <tr style="border-top: 1px solid var(--lv-border)"><td style="padding: 12px 8px">Origins reel pack</td><td style="padding: 12px 8px">v12</td><td style="padding: 12px 8px">Story link</td><td style="padding: 12px 8px; font-variant-numeric: tabular-nums">$12.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-size: 19px">Quick actions</h2>
+      <a href="#" style="text-decoration: none; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: space-between; border: 2px solid var(--lv-border); border-radius: 14px; padding: 14px 16px; color: var(--lv-text); font-weight: 600">Add a page<span style="color: var(--lv-text-3); font-weight: 400; font-size: 14px">Contact, policy, landing</span></a>
+      <a href="#" style="text-decoration: none; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: space-between; border: 2px solid var(--lv-border); border-radius: 14px; padding: 14px 16px; color: var(--lv-text); font-weight: 600">Add a pack<span style="color: var(--lv-text-3); font-weight: 400; font-size: 14px">Opens BuildBase products</span></a>
+      <a href="Inbox.dc.html" style="text-decoration: none; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: space-between; border: 2px solid var(--lv-border); border-radius: 14px; padding: 14px 16px; color: var(--lv-text); font-weight: 600">Create a short link<span style="color: var(--lv-text-3); font-weight: 400; font-size: 14px">With UTM and QR</span></a>
+      <a href="#" style="text-decoration: none; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: space-between; border: 2px solid var(--lv-border); border-radius: 14px; padding: 14px 16px; color: var(--lv-text); font-weight: 600">Review legal pages<span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">2 drafts</span></a>
+    </section>
+  </div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":1440,"height":1000}}'>
+class Component extends DCLogic {
+renderVals() { return { mode: this.props.mode ?? 'light' }; }
+}
+</script>
+</body>
+</html>

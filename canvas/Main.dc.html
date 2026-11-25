@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche landing</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div data-lv="{{mode}}" style="font-family: Sora, 'Helvetica Neue', Arial, sans-serif; color: var(--lv-text); background: var(--lv-bg); min-height: 100%">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 20px clamp(16px, 3vw, 32px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+  <a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--lv-text)">
+    <svg width="40" height="40" viewBox="0 0 512 512" role="img" aria-label="Levuche"><rect width="512" height="512" rx="116" fill="#24257A"></rect><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+    <span style="font-size: 26px; font-weight: 700; letter-spacing: -0.5px">levuche</span>
+  </a>
+  <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: clamp(12px, 2vw, 28px); font-size: 15px">
+    <a href="#how" style="text-decoration: none; color: var(--lv-text-2)">How it works</a>
+    <a href="#features" style="text-decoration: none; color: var(--lv-text-2)">Features</a>
+    <a href="#pricing" style="text-decoration: none; color: var(--lv-text-2)">Pricing</a>
+    <a href="#" style="text-decoration: none; color: var(--lv-link); font-weight: 600">Sign in</a>
+    <a href="#beta" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 12px 20px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Join the beta</a>
+  </nav>
+</header>
+
+<section id="beta" style="max-width: 1240px; margin: 0 auto; padding: clamp(24px, 4vw, 56px) clamp(16px, 3vw, 32px) clamp(56px, 7vw, 96px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(32px, 5vw, 64px); align-items: center">
+  <div style="display: flex; flex-direction: column; gap: 24px">
+    <h1 style="margin: 0; font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -2px; font-weight: 700">Your link in bio, now a shop.</h1>
+    <p style="margin: 0; font-size: clamp(17px, 2vw, 20px); line-height: 1.6; color: var(--lv-text-2); max-width: 520px">Levuche turns your Instagram link into a small website that sells your packs, prompts and guides. Pay $9 once. No monthly fee.</p>
+    <form style="display: flex; flex-wrap: wrap; gap: 12px; max-width: 520px" onsubmit="return false">
+      <label for="beta-email" style="position: absolute; left: -9999px">Email address</label>
+      <input id="beta-email" type="email" placeholder="you@email.com" style="flex: 1 1 240px; min-height: 56px; padding: 0 20px; border: 2px solid var(--lv-border); border-radius: 999px; font: inherit; font-size: 16px; color: var(--lv-text); background: var(--lv-card)">
+      <button type="submit" style="flex: 1 1 auto; min-height: 56px; padding: 0 28px; border: 0; border-radius: 999px; background: var(--lv-accent); color: var(--lv-on-accent); font: inherit; font-size: 16px; font-weight: 700; cursor: pointer">Join the beta</button>
+    </form>
+    <p style="margin: 0; font-size: 14px; color: var(--lv-text-3)">We approve creators in small groups. You will get an email when your spot opens.</p>
+  </div>
+  <div style="display: flex; justify-content: center">
+    <div data-site="dark" style="width: min(100%, 320px); border-radius: 40px; border: 10px solid var(--lv-text); background: var(--site-bg); padding: 26px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px; box-shadow: var(--lv-shadow)">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding-top: 6px">
+        <div style="width: 76px; height: 76px; border-radius: 50%; background: var(--site-accent); display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; color: var(--site-on-accent)">DO</div>
+        <p style="margin: 0; color: var(--site-text); font-size: 18px; font-weight: 700">Desi Origins</p>
+        <p style="margin: 0; color: var(--site-text-2); font-size: 13px; text-align: center">How everyday things began</p>
+      </div>
+      <div style="background: var(--site-surface); border-radius: 18px; padding: 14px; display: flex; gap: 12px; align-items: center">
+        <div style="width: 56px; height: 56px; border-radius: 12px; background: var(--site-surface-2); flex: none"></div>
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+          <p style="margin: 0; font-size: 14px; font-weight: 700; color: var(--site-text)">Origins reel pack</p>
+          <p style="margin: 0; font-size: 12px; color: var(--site-text-2)">100 prompts, 1 guide</p>
+        </div>
+        <p style="margin: 0; font-size: 15px; font-weight: 700; color: var(--site-text)">$[PRICE]</p>
+      </div>
+      <p style="margin: 0; background: var(--site-accent); color: var(--site-on-accent); font-weight: 700; text-align: center; padding: 14px; border-radius: 999px; font-size: 15px">I’ll take it</p>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+        <div style="aspect-ratio: 9/14; border-radius: 10px; background: var(--site-surface-2)"></div>
+        <div style="aspect-ratio: 9/14; border-radius: 10px; background: var(--site-surface-2)"></div>
+        <div style="aspect-ratio: 9/14; border-radius: 10px; background: var(--site-surface-2)"></div>
+      </div>
+      <p style="margin: 0; text-align: center; color: var(--site-text-2); font-size: 12px">desiorigins.levuche.page</p>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background: var(--lv-surface); padding: clamp(56px, 7vw, 96px) clamp(16px, 3vw, 32px)">
+  <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+    <h2 style="margin: 0; font-size: clamp(30px, 4vw, 44px); letter-spacing: -1px">Live in three steps</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px">
+      <div style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+        <p style="margin: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--lv-brand); color: var(--lv-on-brand); display: flex; align-items: center; justify-content: center; font-weight: 700">1</p>
+        <h3 style="margin: 0; font-size: 22px">Claim your name</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--lv-text-2)">Pick a handle and get yourname.levuche.page. One name, one site, yours alone.</p>
+      </div>
+      <div style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+        <p style="margin: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--lv-brand); color: var(--lv-on-brand); display: flex; align-items: center; justify-content: center; font-weight: 700">2</p>
+        <h3 style="margin: 0; font-size: 22px">Drag in sections</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--lv-text-2)">Build your home page from ready-made sections in your own brand. It looks right on every phone.</p>
+      </div>
+      <div style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+        <p style="margin: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--lv-brand); color: var(--lv-on-brand); display: flex; align-items: center; justify-content: center; font-weight: 700">3</p>
+        <h3 style="margin: 0; font-size: 22px">Sell and get paid</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--lv-text-2)">Add your packs. Buyers pay by card and download straight away. You see every sale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" style="max-width: 1240px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) clamp(16px, 3vw, 32px); display: flex; flex-direction: column; gap: 40px">
+  <h2 style="margin: 0; font-size: clamp(30px, 4vw, 44px); letter-spacing: -1px">Everything a creator store needs</h2>
+  <dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); column-gap: 48px; border-top: 1px solid var(--lv-border)">
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Your brand, not ours</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">Set your colours, fonts and logo once; every section follows them in light and dark.</dd></div>
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Legal pages written for you</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">Privacy, terms, refund and shipping pages from templates you review.</dd></div>
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Instant downloads</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">Sell prompts, guides and templates. Buyers get secure links the moment they pay.</dd></div>
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Forms and newsletter</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">Contact, newsletter and waitlist forms land in one inbox.</dd></div>
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Tracked short links</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">A short link and QR code for every reel, with clicks by source.</dd></div>
+    <div style="padding: 22px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-size: 19px; font-weight: 700">Versions you can undo</dt><dd style="margin: 6px 0 0; color: var(--lv-text-2); line-height: 1.6">Preview a draft, publish when ready, roll back in one click.</dd></div>
+  </dl>
+</section>
+
+<section id="pricing" style="background: var(--lv-surface); padding: clamp(56px, 7vw, 96px) clamp(16px, 3vw, 32px)">
+  <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <h2 style="margin: 0; font-size: clamp(30px, 4vw, 44px); letter-spacing: -1px">Pay once. Then only for what you use.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--lv-text-2)">No monthly fee just to keep your page online.</p>
+    </div>
+    <div style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 28px; padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; display: flex; align-items: baseline; gap: 10px"><span style="font-size: 56px; font-weight: 700; color: var(--lv-text)">$9</span><span style="color: var(--lv-text-2)">once</span></p>
+      <ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; color: var(--lv-text-2); line-height: 1.5">
+        <li>Your site at yourname.levuche.page</li>
+        <li>[YOUR FEE]% per sale, only when you sell</li>
+        <li>Storage and extras from prepaid credits</li>
+        <li>Your own domain, when you want it</li>
+      </ul>
+      <a href="#beta" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 700; text-align: center; padding: 16px; border-radius: 999px">Join the beta</a>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--lv-brand); padding: clamp(56px, 7vw, 96px) clamp(16px, 3vw, 32px)">
+  <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: space-between">
+    <h2 style="margin: 0; font-size: clamp(34px, 5vw, 52px); letter-spacing: -1.5px; color: var(--lv-on-brand)">Say “I’ll take it.”</h2>
+    <a href="#beta" style="text-decoration: none; background: var(--lv-accent); color: var(--lv-on-accent); font-weight: 700; padding: 18px 32px; border-radius: 999px; font-size: 18px">Get early access</a>
+  </div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 32px clamp(16px, 3vw, 32px); display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; font-size: 14px; color: var(--lv-text-3)">
+  <p style="margin: 0">© 2026 Jagodana LLC. Levuche is a Jagodana product.</p>
+  <nav aria-label="Legal" style="display: flex; flex-wrap: wrap; gap: 20px"><a href="#" style="color: var(--lv-link)">Terms</a><a href="#" style="color: var(--lv-link)">Privacy</a><a href="#" style="color: var(--lv-link)">Pack terms</a><a href="#" style="color: var(--lv-link)">Security</a></nav>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":1440,"height":2780}}'>
+class Component extends DCLogic {
+renderVals() { return { mode: this.props.mode ?? 'light' }; }
+}
+</script>
+</body>
+</html>

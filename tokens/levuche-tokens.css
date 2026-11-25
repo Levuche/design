@@ -1,0 +1,34 @@
+/* Levuche design tokens v1.0, locked 2026-11-25. Product UI uses only --lv-*; creator sites use only --site-*. */
+[data-lv="light"]{
+  --lv-bg:#FFFFFF; --lv-surface:#F6F7FD; --lv-surface-2:#EEF0FB; --lv-card:#FFFFFF; --lv-border:#DDE0F3;
+  --lv-text:#14154A; --lv-text-2:#3A3B5C; --lv-text-3:#5B5D7E; --lv-link:#24257A;
+  --lv-brand:#24257A; --lv-on-brand:#FFFFFF; --lv-brand-2:#33358F;
+  --lv-accent:#FFB627; --lv-on-accent:#24257A; --lv-accent-soft:#FFF4DC; --lv-on-accent-soft:#6B4A00;
+  --lv-primary:#24257A; --lv-on-primary:#FFFFFF;
+  --lv-success-bg:#E3F5EA; --lv-success:#1C6B3A; --lv-danger:#9B1C1C; --lv-danger-border:#F3D3D3;
+  --lv-shadow:0 20px 50px rgba(20,21,74,0.16); --lv-canvas:#E9EBF7;
+  color-scheme:light;
+}
+[data-lv="dark"]{
+  --lv-bg:#0D0E26; --lv-surface:#14153A; --lv-surface-2:#1C1E4A; --lv-card:#181A42; --lv-border:#2C2E63;
+  --lv-text:#F1F2FC; --lv-text-2:#C9CBF2; --lv-text-3:#A3A6D6; --lv-link:#FFCB66;
+  --lv-brand:#24257A; --lv-on-brand:#FFFFFF; --lv-brand-2:#33358F;
+  --lv-accent:#FFB627; --lv-on-accent:#14154A; --lv-accent-soft:#3A2C08; --lv-on-accent-soft:#FFD27A;
+  --lv-primary:#FFB627; --lv-on-primary:#14154A;
+  --lv-success-bg:#0F3320; --lv-success:#8FE0B0; --lv-danger:#FF9B9B; --lv-danger-border:#5A2626;
+  --lv-shadow:0 20px 50px rgba(0,0,0,0.45); --lv-canvas:#090A1C;
+  color-scheme:dark;
+}
+/* Sample creator brand ("Desi Origins"). Every creator sets these from their own brand in the editor's Theme panel. */
+[data-site="light"]{
+  --site-bg:#FFFFFF; --site-surface:#FFF4EC; --site-surface-2:#FFE6D4; --site-border:#F1DFD2;
+  --site-text:#1A1325; --site-text-2:#4B4458; --site-link:#9A3412;
+  --site-accent:#C2410C; --site-on-accent:#FFFFFF; --site-band:#C2410C; --site-on-band:#FFFFFF;
+  --site-notice:#FFF4DC; --site-on-notice:#3D2A00; color-scheme:light;
+}
+[data-site="dark"]{
+  --site-bg:#0F1020; --site-surface:#1B1C33; --site-surface-2:#2A2B4A; --site-border:#23244A;
+  --site-text:#F4F4F8; --site-text-2:#C2C3D8; --site-link:#FFB27A;
+  --site-accent:#FF8A3D; --site-on-accent:#0F1020; --site-band:#FF8A3D; --site-on-band:#0F1020;
+  --site-notice:#FFF4DC; --site-on-notice:#3D2A00; color-scheme:dark;
+}

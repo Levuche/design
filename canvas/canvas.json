@@ -1,0 +1,501 @@
+{
+"v": 3,
+"createdOnFiles": {
+"v": 1,
+"at": "2026-11-25T09:00:00Z"
+},
+"title": "Levuche product design",
+"launch": {
+"view": "canvas",
+"page": "atoms"
+},
+"pages": [
+{
+"id": "brand",
+"name": "0 \u00b7 Tokens"
+},
+{
+"id": "atoms",
+"name": "1 \u00b7 Atoms"
+},
+{
+"id": "molecules",
+"name": "2 \u00b7 Molecules"
+},
+{
+"id": "organisms",
+"name": "3 \u00b7 Organisms"
+},
+{
+"id": "templates",
+"name": "4 \u00b7 Templates"
+},
+{
+"id": "marketing",
+"name": "5 \u00b7 Page: marketing site"
+},
+{
+"id": "dashboard",
+"name": "5 \u00b7 Page: dashboard"
+},
+{
+"id": "editor",
+"name": "5 \u00b7 Page: editor"
+},
+{
+"id": "site",
+"name": "5 \u00b7 Page: creator site"
+},
+{
+"id": "components",
+"name": "Source pages"
+}
+],
+"boards": {
+"Brand.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1440,
+"h": 1900,
+"title": "Levuche brand and tokens v1.0",
+"page": "brand"
+},
+"MarketingDesktop.dc.html": {
+"x": 0,
+"y": 0,
+"w": 2960,
+"h": 2870,
+"title": "Desktop 1440: light and dark",
+"page": "marketing"
+},
+"MarketingTablet.dc.html": {
+"x": 0,
+"y": 2990,
+"w": 1748,
+"h": 3890,
+"title": "Tablet 834: light and dark",
+"page": "marketing"
+},
+"MarketingPhone.dc.html": {
+"x": 0,
+"y": 7000,
+"w": 860,
+"h": 5890,
+"title": "Phone 390: light and dark",
+"page": "marketing"
+},
+"DashboardDesktop.dc.html": {
+"x": 0,
+"y": 0,
+"w": 2960,
+"h": 1090,
+"title": "Dashboard, desktop: light and dark",
+"page": "dashboard"
+},
+"DashboardTablet.dc.html": {
+"x": 0,
+"y": 1210,
+"w": 1748,
+"h": 1540,
+"title": "Dashboard, tablet: light and dark",
+"page": "dashboard"
+},
+"DashboardPhone.dc.html": {
+"x": 0,
+"y": 2870,
+"w": 860,
+"h": 2990,
+"title": "Dashboard, phone: light and dark",
+"page": "dashboard"
+},
+"InboxDesktop.dc.html": {
+"x": 3040,
+"y": 0,
+"w": 2960,
+"h": 1090,
+"title": "Inbox and links, desktop: light and dark",
+"page": "dashboard"
+},
+"InboxTablet.dc.html": {
+"x": 3040,
+"y": 1210,
+"w": 1748,
+"h": 2090,
+"title": "Inbox and links, tablet: light and dark",
+"page": "dashboard"
+},
+"InboxPhone.dc.html": {
+"x": 3040,
+"y": 3420,
+"w": 860,
+"h": 3290,
+"title": "Inbox and links, phone: light and dark",
+"page": "dashboard"
+},
+"EditorDesktop.dc.html": {
+"x": 0,
+"y": 0,
+"w": 2960,
+"h": 1010,
+"title": "Editor, desktop: light and dark",
+"page": "editor"
+},
+"EditorTablet.dc.html": {
+"x": 0,
+"y": 1130,
+"w": 1748,
+"h": 1690,
+"title": "Editor, tablet: light and dark",
+"page": "editor"
+},
+"EditorPhone.dc.html": {
+"x": 0,
+"y": 2940,
+"w": 860,
+"h": 2890,
+"title": "Editor, phone: light and dark",
+"page": "editor"
+},
+"SiteDesktop.dc.html": {
+"x": 0,
+"y": 0,
+"w": 2960,
+"h": 2250,
+"title": "Creator site, desktop: creator brand light and dark",
+"page": "site"
+},
+"SiteTablet.dc.html": {
+"x": 0,
+"y": 2370,
+"w": 1748,
+"h": 3190,
+"title": "Creator site, tablet: creator brand light and dark",
+"page": "site"
+},
+"SitePhone.dc.html": {
+"x": 0,
+"y": 5680,
+"w": 860,
+"h": 4690,
+"title": "Creator site, phone: creator brand light and dark",
+"page": "site"
+},
+"PackDesktop.dc.html": {
+"x": 3040,
+"y": 0,
+"w": 2960,
+"h": 1390,
+"title": "Pack page, desktop: light and dark",
+"page": "site"
+},
+"PackTablet.dc.html": {
+"x": 3040,
+"y": 1510,
+"w": 1748,
+"h": 1790,
+"title": "Pack page, tablet: light and dark",
+"page": "site"
+},
+"PackPhone.dc.html": {
+"x": 3040,
+"y": 3420,
+"w": 860,
+"h": 1990,
+"title": "Pack page, phone: light and dark",
+"page": "site"
+},
+"Main.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1440,
+"h": 2780,
+"title": "Source: landing",
+"page": "components",
+"expand": "fill"
+},
+"Dashboard.dc.html": {
+"x": 1520,
+"y": 0,
+"w": 1440,
+"h": 1000,
+"title": "Source: dashboard home",
+"page": "components",
+"expand": "fill"
+},
+"Inbox.dc.html": {
+"x": 3040,
+"y": 0,
+"w": 1440,
+"h": 1000,
+"title": "Source: inbox and short links",
+"page": "components",
+"expand": "fill"
+},
+"Editor.dc.html": {
+"x": 4560,
+"y": 0,
+"w": 1440,
+"h": 920,
+"title": "Source: editor",
+"page": "components",
+"expand": "fill"
+},
+"SiteHome.dc.html": {
+"x": 6080,
+"y": 0,
+"w": 1440,
+"h": 2160,
+"title": "Source: creator site home",
+"page": "components",
+"expand": "fill"
+},
+"Pack.dc.html": {
+"x": 7600,
+"y": 0,
+"w": 1440,
+"h": 1300,
+"title": "Source: pack page",
+"page": "components",
+"expand": "fill"
+},
+"Atoms.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1600,
+"h": 2300,
+"title": "Atoms: light and dark",
+"page": "atoms"
+},
+"Molecules.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1600,
+"h": 2700,
+"title": "Molecules: light and dark",
+"page": "molecules"
+},
+"Organisms.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1600,
+"h": 3600,
+"title": "Organisms: light and dark",
+"page": "organisms"
+},
+"Templates.dc.html": {
+"x": 0,
+"y": 0,
+"w": 1600,
+"h": 2800,
+"title": "Templates: content structure",
+"page": "templates"
+},
+"OnboardingFlow.dc.html": {
+"x": 0,
+"y": 6830,
+"w": 2110,
+"h": 1880,
+"title": "Onboarding flow, phone: light and dark",
+"page": "dashboard"
+},
+"SettingsFlow.dc.html": {
+"x": 0,
+"y": 8830,
+"w": 1680,
+"h": 3640,
+"title": "Dashboard settings and empty states: light and dark",
+"page": "dashboard"
+},
+"EditorStates.dc.html": {
+"x": 0,
+"y": 5950,
+"w": 2540,
+"h": 1860,
+"title": "Editor states and phone editor: light and dark",
+"page": "editor"
+},
+"SitePagesFlow.dc.html": {
+"x": 3040,
+"y": 5530,
+"w": 2110,
+"h": 3640,
+"title": "Creator site pages, phone: creator brand light and dark",
+"page": "site"
+},
+"MarketingPages.dc.html": {
+"x": 980,
+"y": 7000,
+"w": 2480,
+"h": 2700,
+"title": "levuche.com pricing and legal pages: light and dark",
+"page": "marketing"
+}
+},
+"order": [
+"Main.dc.html",
+"Brand.dc.html",
+"MarketingDesktop.dc.html",
+"MarketingTablet.dc.html",
+"MarketingPhone.dc.html",
+"Dashboard.dc.html",
+"Inbox.dc.html",
+"DashboardDesktop.dc.html",
+"DashboardTablet.dc.html",
+"DashboardPhone.dc.html",
+"InboxDesktop.dc.html",
+"InboxTablet.dc.html",
+"InboxPhone.dc.html",
+"Editor.dc.html",
+"EditorDesktop.dc.html",
+"EditorTablet.dc.html",
+"EditorPhone.dc.html",
+"SiteHome.dc.html",
+"Pack.dc.html",
+"SiteDesktop.dc.html",
+"SiteTablet.dc.html",
+"SitePhone.dc.html",
+"PackDesktop.dc.html",
+"PackTablet.dc.html",
+"PackPhone.dc.html",
+"Atoms.dc.html",
+"Molecules.dc.html",
+"Organisms.dc.html",
+"Templates.dc.html",
+"OnboardingFlow.dc.html",
+"SettingsFlow.dc.html",
+"EditorStates.dc.html",
+"SitePagesFlow.dc.html",
+"MarketingPages.dc.html"
+],
+"notes": {
+"t-brand": {
+"x": 0,
+"y": -300,
+"text": "Levuche brand and tokens, v1.0 (locked)",
+"kind": "title1",
+"maxW": 1440,
+"page": "brand"
+},
+"s-brand": {
+"x": 1520,
+"y": 0,
+"w": 440,
+"text": "Rule: product screens (marketing site, dashboard, editor) use only --lv-* tokens, light and dark.\n\nCreator sites use only --site-* tokens, set from each creator's own brand. The orange 'Desi Origins' brand is a sample.",
+"fill": "yellow",
+"page": "brand"
+},
+"t-marketing": {
+"x": 0,
+"y": -300,
+"text": "levuche.com: marketing and beta",
+"kind": "title1",
+"maxW": 2960,
+"page": "marketing"
+},
+"s-marketing": {
+"x": 3040,
+"y": 0,
+"w": 420,
+"text": "From BuildBase, not redesigned:\n\u2022 Beta signup form (BetaForm) and approved-waitlist access\n\u2022 Hosted sign-in and sign-up pages\n\u2022 Cookie banner and consent\n\nOurs: this landing page only.",
+"fill": "blue",
+"page": "marketing"
+},
+"t-dashboard": {
+"x": 0,
+"y": -300,
+"text": "Creator dashboard",
+"kind": "title1",
+"maxW": 6000,
+"page": "dashboard"
+},
+"s-dashboard": {
+"x": 6080,
+"y": 0,
+"w": 440,
+"text": "From BuildBase, not redesigned:\n\u2022 Workspace switcher (one workspace = one site)\n\u2022 Members, invites, roles and permissions\n\u2022 Account, profile, security, sessions\n\u2022 Plans, billing, credits and invoices\n\u2022 Products, files and releases editor (ItemEditor, SellerItems)\n\u2022 Sales and orders (SellerSales, SellerHome)\n\u2022 Stripe Connect seller onboarding\n\nOurs: site overview, inbox, short links, handle and domain settings.",
+"fill": "blue",
+"page": "dashboard"
+},
+"t-editor": {
+"x": 0,
+"y": -300,
+"text": "Site editor",
+"kind": "title1",
+"maxW": 2960,
+"page": "editor"
+},
+"s-editor": {
+"x": 3040,
+"y": 0,
+"w": 420,
+"text": "All ours: Insert panel (sections, components, pages), preview on three devices, properties panel, theme, draft autosave, preview link, publish and version history.\n\nOn phones the panels stack under the preview.\n\nProducts picked inside a block come from BuildBase items.",
+"fill": "yellow",
+"page": "editor"
+},
+"t-site": {
+"x": 0,
+"y": -300,
+"text": "Creator public site: handle.levuche.page",
+"kind": "title1",
+"maxW": 6000,
+"page": "site"
+},
+"s-site": {
+"x": 6080,
+"y": 0,
+"w": 440,
+"text": "Creator sites use the creator's own brand (--site-* tokens), not Levuche colours. Shown: the sample 'Desi Origins' brand in light and dark.\n\nFrom BuildBase, not redesigned:\n\u2022 Stripe checkout and payment\n\u2022 Order page downloads (HoldingFiles, licence keys)\n\u2022 Receipt and order emails\n\u2022 Form storage (Forms into Collections)",
+"fill": "blue",
+"page": "site"
+},
+"t-components": {
+"x": 0,
+"y": -300,
+"text": "Source components (frames on other pages reuse these)",
+"kind": "title1",
+"maxW": 9040,
+"page": "components"
+},
+"t-atoms": {
+"x": 0,
+"y": -300,
+"text": "1 \u00b7 Atoms: smallest parts that can't be broken down",
+"kind": "title1",
+"maxW": 1600,
+"page": "atoms"
+},
+"t-molecules": {
+"x": 0,
+"y": -300,
+"text": "2 \u00b7 Molecules: simple groups of atoms",
+"kind": "title1",
+"maxW": 1600,
+"page": "molecules"
+},
+"t-organisms": {
+"x": 0,
+"y": -300,
+"text": "3 \u00b7 Organisms: distinct sections of an interface",
+"kind": "title1",
+"maxW": 1600,
+"page": "organisms"
+},
+"t-templates": {
+"x": 0,
+"y": -300,
+"text": "4 \u00b7 Templates: layout and content structure",
+"kind": "title1",
+"maxW": 1600,
+"page": "templates"
+},
+"s-atomic": {
+"x": 1680,
+"y": 0,
+"w": 440,
+"text": "Atomic design (Brad Frost): atoms \u2192 molecules \u2192 organisms \u2192 templates \u2192 pages.\n\nEvery level uses only tokens: --lv-* for Levuche screens, --site-* for creator sites. Each artboard shows light and dark.\n\nPages = the device frames on the '5 \u00b7 Page' tabs.",
+"fill": "yellow",
+"page": "atoms"
+}
+},
+"designSystems": []
+}

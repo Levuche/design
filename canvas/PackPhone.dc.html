@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pack page phone</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div data-lv="light" style="width: 860px; height: 1990px; box-sizing: border-box; display: flex; gap: 80px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+  <div style="width: 390px; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-size: 26px; font-weight: 700; color: var(--lv-text-3)">Creator brand: light (in Instagram)</p>
+    <div style="width: 390px; border-radius: 16px; overflow: hidden; border: 1px solid var(--lv-border)">
+      <dc-import name="Pack" mode="light" in-app="{{ true }}" hint-size="390px,1900px"></dc-import>
+    </div>
+  </div>
+  <div style="width: 390px; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-size: 26px; font-weight: 700; color: var(--lv-text-3)">Creator brand: dark (in Instagram)</p>
+    <div style="width: 390px; border-radius: 16px; overflow: hidden; border: 1px solid var(--lv-border)">
+      <dc-import name="Pack" mode="dark" in-app="{{ true }}" hint-size="390px,1900px"></dc-import>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":860,"height":1990}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

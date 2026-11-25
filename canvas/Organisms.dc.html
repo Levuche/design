@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche organisms</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1600px; height: 3600px; box-sizing: border-box; display: flex; gap: 40px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="flex: 1; min-width: 0; background: var(--lv-surface); color: var(--lv-text); border: 1px solid var(--lv-border); border-radius: 24px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px">
+  <h2 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">{{m.label}}</h2>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 17px">Marketing header and hero</h3>
+    <div style="background: var(--lv-bg); border: 1px solid var(--lv-border); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between">
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 20px"><svg width="28" height="28" viewBox="0 0 512 512" role="img" aria-label="Levuche"><rect width="512" height="512" rx="116" fill="#24257A"></rect><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>levuche</span>
+        <span style="display: flex; gap: 16px; align-items: center; font-size: 14px"><a href="#" style="color: var(--lv-text-2); text-decoration: none">Pricing</a><a href="#" style="color: var(--lv-link); font-weight: 600; text-decoration: none">Sign in</a><a href="#" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 10px 16px; border-radius: 999px">Join the beta</a></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <p style="margin: 0; font-size: 38px; font-weight: 700; letter-spacing: -1px; line-height: 1.1">Your link in bio, now a shop.</p>
+        <p style="margin: 0; color: var(--lv-text-2); line-height: 1.6">Sell your packs, prompts and guides from one page. Pay $9 once.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px"><input type="email" aria-label="Email" placeholder="you@email.com" style="flex: 1 1 180px; min-height: 48px; padding: 0 16px; border: 2px solid var(--lv-border); border-radius: 999px; font: inherit; color: var(--lv-text); background: var(--lv-bg)"><button type="button" style="min-height: 48px; padding: 0 20px; border: 0; border-radius: 999px; background: var(--lv-accent); color: var(--lv-on-accent); font: inherit; font-weight: 700">Join the beta</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 17px">Feature list (not a card grid)</h3>
+    <dl style="margin: 0; background: var(--lv-bg); border: 1px solid var(--lv-border); border-radius: 18px; padding: 8px 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px">
+      <div style="padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-weight: 700">Your brand, not ours</dt><dd style="margin: 4px 0 0; font-size: 14px; color: var(--lv-text-2); line-height: 1.5">Colours and fonts flow into every section.</dd></div>
+      <div style="padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><dt style="font-weight: 700">Instant downloads</dt><dd style="margin: 4px 0 0; font-size: 14px; color: var(--lv-text-2); line-height: 1.5">Secure links the moment buyers pay.</dd></div>
+      <div style="padding: 14px 0"><dt style="font-weight: 700">Tracked short links</dt><dd style="margin: 4px 0 0; font-size: 14px; color: var(--lv-text-2); line-height: 1.5">A link and QR for every reel.</dd></div>
+      <div style="padding: 14px 0"><dt style="font-weight: 700">Versions you can undo</dt><dd style="margin: 4px 0 0; font-size: 14px; color: var(--lv-text-2); line-height: 1.5">Roll back in one click.</dd></div>
+    </dl>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 17px">Dashboard header and summary strip</h3>
+    <div style="background: var(--lv-bg); border: 1px solid var(--lv-border); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between">
+        <div style="display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-size: 24px; font-weight: 700">Desi Origins</p><p style="margin: 0; display: flex; gap: 8px; flex-wrap: wrap"><span style="background: var(--lv-success-bg); color: var(--lv-success); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">Live, v12</span><span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">3 unpublished changes</span></p></div>
+        <a href="#" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 12px 18px; border-radius: 999px; font-size: 14px">Edit site</a>
+      </div>
+      <p style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--lv-text-2); font-variant-numeric: tabular-nums; padding-top: 14px; border-top: 1px solid var(--lv-border)"><span>Last 7 days</span><span><strong style="color: var(--lv-text)">1,284</strong> views</span><span><strong style="color: var(--lv-text)">642</strong> link clicks</span><span><strong style="color: var(--lv-text)">31</strong> sales</span><span><strong style="color: var(--lv-text)">$372</strong> revenue</span></p>
+    </div>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 17px">Sidebar navigation</h3>
+    <nav aria-label="Dashboard" style="background: var(--lv-brand); color: var(--lv-on-brand); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 2px; font-size: 15px">
+      <a href="#" aria-current="page" style="text-decoration: none; background: var(--lv-accent); color: var(--lv-on-accent); border-radius: 12px; padding: 12px 14px; font-weight: 600">Overview</a>
+      <a href="#" style="text-decoration: none; color: var(--lv-on-brand); border-radius: 12px; padding: 12px 14px; background: var(--lv-brand-2)">Edit site (hover)</a>
+      <a href="#" style="text-decoration: none; color: var(--lv-on-brand); border-radius: 12px; padding: 12px 14px">Inbox and short links</a>
+      <a href="#" style="text-decoration: none; color: var(--lv-on-brand); border-radius: 12px; padding: 12px 14px">Brand and theme</a>
+    </nav>
+  </section>
+
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h3 style="margin: 0; font-size: 17px">Publish panel</h3>
+    <div role="region" aria-label="Publish" style="background: var(--lv-card); border: 1px solid var(--lv-border); border-radius: 18px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-weight: 700">Publish version 13</p>
+      <p style="margin: 0; font-size: 13px; color: var(--lv-text-2)">Featured pack moved up, FAQ added, refund policy edited.</p>
+      <button type="button" style="border: 0; background: var(--lv-accent); color: var(--lv-on-accent); font: inherit; font-weight: 700; min-height: 44px; border-radius: 999px">Publish now</button>
+      <div style="display: flex; justify-content: space-between; font-size: 13px; padding-top: 10px; border-top: 1px solid var(--lv-border)"><span><strong>v12</strong> 21 Nov</span><span style="background: var(--lv-success-bg); color: var(--lv-success); font-weight: 600; padding: 2px 8px; border-radius: 999px">Live</span></div>
+      <div style="display: flex; justify-content: space-between; font-size: 13px"><span><strong>v11</strong> 18 Nov</span><a href="#" style="font-weight: 600; color: var(--lv-link)">Make live</a></div>
+    </div>
+  </section>
+
+  <section data-site="{{m.id}}" style="background: var(--site-bg); color: var(--site-text); border: 1px solid var(--site-border); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
+    <div role="note" style="background: var(--site-notice); color: var(--site-on-notice); padding: 8px 14px; font-size: 12px; display: flex; justify-content: space-between; gap: 8px"><span>Opened in Instagram? Open in your browser for Apple Pay.</span><a href="#" style="color: var(--site-on-notice); font-weight: 700">Open</a></div>
+    <div style="padding: 16px 18px; display: flex; justify-content: space-between; align-items: center; gap: 10px"><span style="display: flex; gap: 10px; align-items: center; font-weight: 700"><span style="width: 32px; height: 32px; border-radius: 50%; background: var(--site-accent)"></span>Desi Origins</span><span style="display: flex; gap: 14px; font-size: 13px; color: var(--site-text-2)"><span>Packs</span><span>Videos</span><span>Contact</span></span></div>
+    <div style="padding: 0 18px 18px; display: flex; flex-direction: column; gap: 12px">
+      <h3 style="margin: 8px 0 0; font-size: 17px">Creator organisms: header, featured pack, pack grid, newsletter</h3>
+      <article style="background: var(--site-surface); border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 8px"><span style="height: 110px; border-radius: 12px; background: var(--site-surface-2)"></span><span style="font-weight: 700; font-size: 18px">Origins reel pack</span><span style="font-size: 13px; color: var(--site-text-2)">100 prompts, a guide and 12 templates</span><span style="display: flex; justify-content: space-between; align-items: center"><span style="font-weight: 700; font-size: 20px">$12</span><span style="background: var(--site-accent); color: var(--site-on-accent); font-weight: 700; padding: 12px 18px; border-radius: 999px; font-size: 14px">I’ll take it</span></span></article>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px"><span style="background: var(--site-surface); border-radius: 14px; padding: 10px; display: flex; flex-direction: column; gap: 6px; font-size: 13px"><span style="height: 60px; border-radius: 10px; background: var(--site-surface-2)"></span><strong>Starter kit</strong>$7</span><span style="background: var(--site-surface); border-radius: 14px; padding: 10px; display: flex; flex-direction: column; gap: 6px; font-size: 13px"><span style="height: 60px; border-radius: 10px; background: var(--site-surface-2)"></span><strong>Caption playbook</strong>$5</span></div>
+      <div style="background: var(--site-band); color: var(--site-on-band); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px"><strong>One origin story a week</strong><span style="display: flex; gap: 8px"><input type="email" aria-label="Email" placeholder="you@email.com" style="flex: 1; min-width: 0; min-height: 44px; border: 0; border-radius: 999px; padding: 0 14px; font: inherit; font-size: 14px; background: var(--site-bg); color: var(--site-text)"><button type="button" style="min-height: 44px; border: 2px solid var(--site-on-band); border-radius: 999px; padding: 0 16px; background: transparent; color: var(--site-on-band); font: inherit; font-weight: 700">Subscribe</button></span></div>
+    </div>
+    <div style="border-top: 1px solid var(--site-border); padding: 12px 18px; display: flex; justify-content: space-between; font-size: 12px; color: var(--site-text-2)"><span style="display: flex; gap: 12px"><a href="#" style="color: var(--site-link)">Privacy</a><a href="#" style="color: var(--site-link)">Refunds</a><a href="#" style="color: var(--site-link)">Report</a></span><span>Made with Levuche</span></div>
+  </section>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1600,"height":3600}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>

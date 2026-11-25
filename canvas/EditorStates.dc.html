@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche editor states, phone</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 2540px; height: 1860px; box-sizing: border-box; display: flex; flex-direction: column; gap: 80px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="display: flex; flex-direction: column; gap: 16px">
+  <p style="margin: 0; font-size: 26px; line-height: 1; font-weight: 700; color: var(--lv-text-3)">{{m.label}}</p>
+  <div style="display: flex; gap: 40px">
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to dashboard" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 15px">Home</span><span style="font-size: 12px; color: var(--lv-success); font-weight: 600">Draft saved</span></div>
+        <button type="button" aria-label="Preview" style="width: 44px; height: 44px; border: 2px solid var(--lv-border); border-radius: 12px; background: transparent; color: var(--lv-link); display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+        <button type="button" style="border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-size: 14px; font-weight: 700; padding: 0 16px; min-height: 44px; border-radius: 999px">Publish</button>
+      </div>
+      <div data-site="{{m.id}}" style="flex: 1; min-height: 0; margin: 12px; border-radius: 20px; background: var(--site-bg); color: var(--site-text); border: 1px solid var(--site-border); padding: 16px 14px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--site-accent)"></span><strong style="font-size: 15px">Desi Origins</strong><span style="font-size: 12px; color: var(--site-text-2)">How everyday things began</span></div>
+        <div style="outline: 3px solid var(--lv-accent); outline-offset: 3px; border-radius: 16px; background: var(--site-surface); padding: 12px; display: flex; flex-direction: column; gap: 8px"><span style="height: 80px; border-radius: 10px; background: var(--site-surface-2)"></span><strong style="font-size: 14px">Origins reel pack</strong><span style="background: var(--site-accent); color: var(--site-on-accent); text-align: center; font-weight: 700; font-size: 13px; padding: 9px; border-radius: 999px">I’ll take it, $[PRICE]</span></div>
+      </div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="dialog" aria-label="Featured pack settings" style="position: absolute; left: 0; right: 0; bottom: 0; background: var(--lv-card); border-radius: 24px 24px 0 0; box-shadow: var(--lv-shadow); padding: 10px 16px 22px; display: flex; flex-direction: column; gap: 14px">
+        <span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 999px; background: var(--lv-border)"></span>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-size: 18px">Featured pack</h2><button type="button" style="border: 0; background: transparent; color: var(--lv-link); font: inherit; font-size: 14px; font-weight: 600; min-height: 44px; padding: 0 6px">Done</button></div>
+        <fieldset style="border: 0; padding: 0; margin: 0"><legend style="font-size: 13px; font-weight: 600; margin-bottom: 8px">Layout</legend><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px"><button type="button" aria-pressed="true" style="border: 2px solid var(--lv-primary); background: var(--lv-surface-2); border-radius: 10px; min-height: 44px; font: inherit; font-size: 13px; font-weight: 600; color: var(--lv-text)">Card</button><button type="button" aria-pressed="false" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 10px; min-height: 44px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Split</button><button type="button" aria-pressed="false" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 10px; min-height: 44px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Hero</button></div></fieldset>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="es-p-{{m.id}}" style="font-size: 13px; font-weight: 600">Product</label><select id="es-p-{{m.id}}" style="min-height: 44px; border: 2px solid var(--lv-border); border-radius: 10px; padding: 0 10px; font: inherit; font-size: 14px; background: var(--lv-bg); color: var(--lv-text)"><option>Origins reel pack</option><option>Prompt starter kit</option></select></div>
+        <div style="display: flex; flex-direction: column; gap: 6px"><label for="es-b-{{m.id}}" style="font-size: 13px; font-weight: 600">Button text</label><input id="es-b-{{m.id}}" type="text" value="I’ll take it" style="min-height: 44px; border: 2px solid var(--lv-border); border-radius: 10px; padding: 0 10px; font: inherit; font-size: 14px; color: var(--lv-text); background: var(--lv-bg)"></div>
+        <div style="display: flex; gap: 8px"><button type="button" style="flex: 1; border: 2px solid var(--lv-border); background: transparent; border-radius: 999px; min-height: 44px; font: inherit; font-size: 13px; color: var(--lv-link); font-weight: 600">Move up</button><button type="button" style="flex: 1; border: 2px solid var(--lv-border); background: transparent; border-radius: 999px; min-height: 44px; font: inherit; font-size: 13px; color: var(--lv-link); font-weight: 600">Duplicate</button><button type="button" style="flex: 1; border: 2px solid var(--lv-danger-border); background: transparent; border-radius: 999px; min-height: 44px; font: inherit; font-size: 13px; color: var(--lv-danger); font-weight: 600">Remove</button></div>
+      </section>
+    </div>
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to dashboard" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 15px">Home</span><span style="font-size: 12px; color: var(--lv-success); font-weight: 600">Draft saved</span></div>
+        <button type="button" style="border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-size: 14px; font-weight: 700; padding: 0 16px; min-height: 44px; border-radius: 999px">Publish</button>
+      </div>
+      <div data-site="{{m.id}}" style="flex: 1; min-height: 0; margin: 12px; border-radius: 20px; background: var(--site-bg); border: 1px solid var(--site-border)"></div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="dialog" aria-label="Insert" style="position: absolute; left: 0; right: 0; bottom: 0; top: 120px; background: var(--lv-card); border-radius: 24px 24px 0 0; box-shadow: var(--lv-shadow); padding: 10px 16px 22px; display: flex; flex-direction: column; gap: 14px">
+        <span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 999px; background: var(--lv-border)"></span>
+        <div style="display: flex; align-items: center; justify-content: space-between"><h2 style="margin: 0; font-size: 18px">Insert</h2><button type="button" aria-label="Close" style="width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: var(--lv-text-2); display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+        <div role="tablist" aria-label="Insert" style="display: flex; gap: 4px; background: var(--lv-surface-2); border-radius: 12px; padding: 4px">
+          <button type="button" role="tab" aria-selected="false" style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Sections</button>
+          <button type="button" role="tab" aria-selected="true" style="flex: 1; border: 0; background: var(--lv-card); border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; font-weight: 600; color: var(--lv-text)">Components</button>
+          <button type="button" role="tab" aria-selected="false" style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Pages</button>
+        </div>
+        <p style="margin: 0; font-size: 13px; line-height: 1.5; color: var(--lv-text-2)">Small pieces that go inside the selected section: <strong style="color: var(--lv-text)">Featured pack</strong>.</p>
+        <p style="margin: 0; font-size: 12px; font-weight: 700; color: var(--lv-text-3); letter-spacing: 0.5px">TEXT AND MEDIA</p>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M12 6v13"></path></svg>Heading</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>Text</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 16l5-5 4 4 3-3 6 6"></path></svg>Image</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l5 3-5 3z"></path></svg>Video</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 12h16"></path></svg>Divider</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 4h6l1 4H8z"></path><rect x="5" y="8" width="14" height="12" rx="2"></rect></svg>File</button>
+        </div>
+        <p style="margin: 4px 0 0; font-size: 12px; font-weight: 700; color: var(--lv-text-3); letter-spacing: 0.5px">ACTIONS</p>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+          <button type="button" style="border: 2px solid var(--lv-accent); background: var(--lv-accent-soft); border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-on-accent-soft)"><span aria-hidden="true" style="width: 34px; height: 14px; border-radius: 999px; background: var(--lv-accent)"></span>Button</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 14a4 4 0 005.6 0l3-3a4 4 0 00-5.6-5.6l-1 1"></path><path d="M14 10a4 4 0 00-5.6 0l-3 3a4 4 0 005.6 5.6l1-1"></path></svg>Link tile</button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; min-height: 76px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font: inherit; font-size: 12px; font-weight: 600; color: var(--lv-text)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>Email field</button>
+        </div>
+        <p style="margin: auto 0 0; font-size: 13px; color: var(--lv-text-3)">Tap to add below the selection, or press and hold to drag.</p>
+      </section>
+    </div>
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to dashboard" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 15px">Home</span><span style="font-size: 12px; color: var(--lv-success); font-weight: 600">Draft saved</span></div>
+        <button type="button" style="border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-size: 14px; font-weight: 700; padding: 0 16px; min-height: 44px; border-radius: 999px">Publish</button>
+      </div>
+      <div data-site="{{m.id}}" style="flex: 1; min-height: 0; margin: 12px; border-radius: 20px; background: var(--site-bg); border: 1px solid var(--site-border)"></div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="dialog" aria-label="Insert" style="position: absolute; left: 0; right: 0; bottom: 0; top: 120px; background: var(--lv-card); border-radius: 24px 24px 0 0; box-shadow: var(--lv-shadow); padding: 10px 16px 22px; display: flex; flex-direction: column; gap: 14px">
+        <span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 999px; background: var(--lv-border)"></span>
+        <div style="display: flex; align-items: center; justify-content: space-between"><h2 style="margin: 0; font-size: 18px">Insert</h2><button type="button" aria-label="Close" style="width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: var(--lv-text-2); display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+        <div role="tablist" aria-label="Insert" style="display: flex; gap: 4px; background: var(--lv-surface-2); border-radius: 12px; padding: 4px">
+          <button type="button" role="tab" aria-selected="false" style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Sections</button>
+          <button type="button" role="tab" aria-selected="false" style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; color: var(--lv-text-2)">Components</button>
+          <button type="button" role="tab" aria-selected="true" style="flex: 1; border: 0; background: var(--lv-card); border-radius: 9px; min-height: 40px; font: inherit; font-size: 13px; font-weight: 600; color: var(--lv-text)">Pages</button>
+        </div>
+        <p style="margin: 0; font-size: 12px; font-weight: 700; color: var(--lv-text-3); letter-spacing: 0.5px">YOUR PAGES</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px">
+          <li><a href="#" aria-current="page" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 12px; background: var(--lv-surface-2); color: var(--lv-text); font-weight: 600; font-size: 14px"><span style="flex: 1">Home</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></a></li>
+          <li><a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 12px; color: var(--lv-text); font-size: 14px"><span style="flex: 1">Contact</span></a></li>
+          <li><a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 12px; color: var(--lv-text); font-size: 14px"><span style="flex: 1">Privacy policy</span><span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px">Draft</span></a></li>
+          <li><a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 12px; color: var(--lv-text); font-size: 14px"><span style="flex: 1">Refund policy</span><span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px">Draft</span></a></li>
+        </ul>
+        <p style="margin: 4px 0 0; font-size: 12px; font-weight: 700; color: var(--lv-text-3); letter-spacing: 0.5px">ADD A PAGE</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--lv-text); text-align: left"><strong style="font-size: 14px">Video</strong><span style="font-size: 12px; color: var(--lv-text-2)">One reel, how it was made</span></button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--lv-text); text-align: left"><strong style="font-size: 14px">Document</strong><span style="font-size: 12px; color: var(--lv-text-2)">Long text, guide or notes</span></button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--lv-text); text-align: left"><strong style="font-size: 14px">Landing</strong><span style="font-size: 12px; color: var(--lv-text-2)">For one campaign or pack</span></button>
+          <button type="button" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 2px; font: inherit; color: var(--lv-text); text-align: left"><strong style="font-size: 14px">Blank</strong><span style="font-size: 12px; color: var(--lv-text-2)">Start from nothing</span></button>
+        </div>
+        <p style="margin: auto 0 0; font-size: 13px; line-height: 1.5; color: var(--lv-text-3)">New pages start hidden until you add them to your site menu or publish.</p>
+      </section>
+    </div>
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to dashboard" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 15px">Home</span><span style="font-size: 12px; color: var(--lv-danger); font-weight: 600">Not published</span></div>
+        <button type="button" style="border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-size: 14px; font-weight: 700; padding: 0 16px; min-height: 44px; border-radius: 999px">Publish</button>
+      </div>
+      <div data-site="{{m.id}}" style="flex: 1; min-height: 0; margin: 12px; border-radius: 20px; background: var(--site-bg); color: var(--site-text); border: 1px solid var(--site-border); padding: 16px 14px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px"><span style="width: 52px; height: 52px; border-radius: 50%; background: var(--site-accent)"></span><strong style="font-size: 15px">Desi Origins</strong></div>
+        <div style="position: relative; outline: 3px solid var(--lv-danger); outline-offset: 3px; border-radius: 16px; background: var(--site-surface); padding: 12px; display: flex; flex-direction: column; gap: 8px; margin-top: 22px"><span style="position: absolute; top: -32px; left: -3px; background: var(--lv-danger); color: var(--lv-bg); font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 8px">Needs a fix</span><span style="height: 70px; border-radius: 10px; background: var(--site-surface-2)"></span><strong style="font-size: 14px">Origins reel pack</strong></div>
+      </div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="alertdialog" aria-labelledby="pe-t-{{m.id}}" style="position: absolute; left: 0; right: 0; bottom: 0; background: var(--lv-card); border-radius: 24px 24px 0 0; box-shadow: var(--lv-shadow); padding: 10px 16px 22px; display: flex; flex-direction: column; gap: 14px">
+        <span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 999px; background: var(--lv-border)"></span>
+        <h2 id="pe-t-{{m.id}}" style="margin: 0; font-size: 20px; letter-spacing: -0.3px">Version 13 didn’t publish</h2>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--lv-text-2)">Your live site hasn’t changed; visitors still see version 12. Fix these two things, then publish again.</p>
+        <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+          <li style="display: flex; gap: 10px; align-items: center; padding: 12px 0; border-top: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 14px">Featured pack</strong><span style="font-size: 13px; color: var(--lv-danger); line-height: 1.45">Origins reel pack is unpublished in your products</span></span><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; font-size: 13px; padding: 0 14px; min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px">Fix</a></li>
+          <li style="display: flex; gap: 10px; align-items: center; padding: 12px 0; border-top: 1px solid var(--lv-border); border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 14px">Contact page</strong><span style="font-size: 13px; color: var(--lv-danger); line-height: 1.45">The form has no email address to send to</span></span><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; font-size: 13px; padding: 0 14px; min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px">Fix</a></li>
+        </ol>
+        <p style="margin: 0; font-size: 13px; color: var(--lv-text-3)">Your changes are still saved in the draft.</p>
+        <button type="button" style="border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Publish again</button>
+      </section>
+    </div>
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to dashboard" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 700; font-size: 15px">Home</span><span style="font-size: 12px; color: var(--lv-on-accent-soft); font-weight: 600">3 changes not saved</span></div>
+        <button type="button" disabled style="border: 0; background: var(--lv-surface-2); color: var(--lv-text-3); font: inherit; font-size: 14px; font-weight: 700; padding: 0 16px; min-height: 44px; border-radius: 999px">Publish</button>
+      </div>
+      <div role="status" style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); padding: 10px 16px; font-size: 13px; font-weight: 600; display: flex; gap: 8px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 8.5a15 15 0 0120 0M5 12a10 10 0 0114 0M8.5 15.5a5 5 0 017 0M3 3l18 18"></path></svg>You’re offline. We’ll save when you’re back.</div>
+      <div data-site="{{m.id}}" style="flex: 1; min-height: 0; margin: 12px; border-radius: 20px; background: var(--site-bg); border: 1px solid var(--site-border)"></div>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="alertdialog" aria-labelledby="uc-t-{{m.id}}" style="position: absolute; left: 16px; right: 16px; top: 250px; background: var(--lv-card); border-radius: 24px; box-shadow: var(--lv-shadow); padding: 22px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+        <h2 id="uc-t-{{m.id}}" style="margin: 0; font-size: 20px; letter-spacing: -0.3px">3 changes aren’t saved yet</h2>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: var(--lv-text-2)">They’re kept on this phone only. If you leave now, they save the next time you open the editor here and you’re online.</p>
+        <button type="button" style="margin-top: 6px; border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Stay and keep editing</button>
+        <button type="button" style="border: 2px solid var(--lv-border); background: transparent; color: var(--lv-link); font: inherit; font-weight: 600; min-height: 48px; border-radius: 999px">Leave for now</button>
+        <button type="button" style="border: 0; background: transparent; color: var(--lv-danger); font: inherit; font-weight: 600; min-height: 44px">Discard the 3 changes</button>
+      </section>
+    </div>
+
+    <div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-canvas); color: var(--lv-text); display: flex; flex-direction: column">
+      <div style="background: var(--lv-card); border-bottom: 1px solid var(--lv-border); padding: 12px 14px; display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="Back to editor" style="width: 44px; height: 44px; box-sizing: border-box; border-radius: 12px; border: 2px solid var(--lv-border); color: var(--lv-link); display: flex; align-items: center; justify-content: center; flex: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></a>
+        <h1 style="margin: 0; flex: 1; font-size: 18px">Version history</h1>
+      </div>
+      <ul style="margin: 0; padding: 8px 16px; list-style: none; background: var(--lv-bg); flex: 1; display: flex; flex-direction: column">
+        <li style="display: flex; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 15px">Draft</strong><span style="font-size: 13px; color: var(--lv-text-2)">3 changes since version 12</span></span><span style="background: var(--lv-accent-soft); color: var(--lv-on-accent-soft); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">Not live</span></li>
+        <li style="display: flex; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 15px">Version 12</strong><span style="font-size: 13px; color: var(--lv-text-2)">[DATE] · New FAQ section</span></span><span style="background: var(--lv-success-bg); color: var(--lv-success); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px">Live</span></li>
+        <li style="display: flex; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 15px">Version 11</strong><span style="font-size: 13px; color: var(--lv-text-2)">[DATE] · Salt pack launch</span></span></li>
+        <li style="display: flex; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--lv-border)"><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 15px">Version 10</strong><span style="font-size: 13px; color: var(--lv-text-2)">[DATE] · No note</span></span></li>
+      </ul>
+      <div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(9,10,28,0.45)"></div>
+      <section role="alertdialog" aria-labelledby="rb-t-{{m.id}}" style="position: absolute; left: 0; right: 0; bottom: 0; background: var(--lv-card); border-radius: 24px 24px 0 0; box-shadow: var(--lv-shadow); padding: 10px 16px 22px; display: flex; flex-direction: column; gap: 12px">
+        <span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 999px; background: var(--lv-border)"></span>
+        <h2 id="rb-t-{{m.id}}" style="margin: 0; font-size: 20px; letter-spacing: -0.3px">Make version 11 live?</h2>
+        <div data-site="{{m.id}}" aria-hidden="true" style="height: 120px; border-radius: 16px; background: var(--site-bg); border: 1px solid var(--site-border); padding: 12px; box-sizing: border-box; display: flex; gap: 10px; align-items: center"><span style="width: 40px; height: 40px; border-radius: 50%; background: var(--site-accent); flex: none"></span><span style="flex: 1; display: flex; flex-direction: column; gap: 8px"><span style="height: 10px; width: 70%; border-radius: 5px; background: var(--site-surface-2)"></span><span style="height: 32px; border-radius: 10px; background: var(--site-surface)"></span></span></div>
+        <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.5; color: var(--lv-text-2)">
+          <li>Visitors see your site as it was on [DATE].</li>
+          <li>Version 12 stays in history; you can switch back.</li>
+          <li>Your draft and its 3 changes are kept.</li>
+        </ul>
+        <button type="button" style="margin-top: 4px; border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Make version 11 live</button>
+        <button type="button" style="border: 2px solid var(--lv-border); background: transparent; color: var(--lv-link); font: inherit; font-weight: 600; min-height: 48px; border-radius: 999px">Cancel</button>
+      </section>
+    </div>
+  </div>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2540,"height":1860}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>

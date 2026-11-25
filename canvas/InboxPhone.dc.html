@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inbox phone</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div data-lv="light" style="width: 860px; height: 3290px; box-sizing: border-box; display: flex; gap: 80px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+  <div style="width: 390px; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-size: 26px; font-weight: 700; color: var(--lv-text-3)">Light</p>
+    <div style="width: 390px; border-radius: 16px; overflow: hidden; border: 1px solid var(--lv-border)">
+      <dc-import name="Inbox" mode="light" hint-size="390px,3200px"></dc-import>
+    </div>
+  </div>
+  <div style="width: 390px; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-size: 26px; font-weight: 700; color: var(--lv-text-3)">Dark</p>
+    <div style="width: 390px; border-radius: 16px; overflow: hidden; border: 1px solid var(--lv-border)">
+      <dc-import name="Inbox" mode="dark" hint-size="390px,3200px"></dc-import>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":860,"height":3290}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

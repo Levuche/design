@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Levuche onboarding flow</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 2110px; height: 1880px; box-sizing: border-box; display: flex; flex-direction: column; gap: 80px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="display: flex; flex-direction: column; gap: 16px">
+  <p style="margin: 0; font-size: 26px; font-weight: 700; color: var(--lv-text-3)">{{m.label}}</p>
+  <div style="display: flex; gap: 40px">
+
+    <div style="width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); padding: 48px 24px 32px; display: flex; flex-direction: column; gap: 20px">
+      <svg width="56" height="56" viewBox="0 0 512 512" role="img" aria-label="Levuche"><rect width="512" height="512" rx="116" fill="#24257A"></rect><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+      <h1 style="margin: 24px 0 0; font-size: 32px; letter-spacing: -0.8px; line-height: 1.15">You’re on the list.</h1>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--lv-text-2)">We approve creators in small groups. We’ll email <strong style="color: var(--lv-text)">priya@example.com</strong> when your spot opens, usually within a week.</p>
+      <div style="background: var(--lv-surface); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-weight: 700">While you wait</p><p style="margin: 0; font-size: 14px; color: var(--lv-text-2); line-height: 1.5">Think of a handle and gather 3 to 5 photos for your packs.</p></div>
+      <a href="#" style="margin-top: auto; text-decoration: none; text-align: center; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; padding: 14px; border-radius: 999px">Back to levuche.com</a>
+    </div>
+
+    <div style="width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-brand); color: var(--lv-on-brand); padding: 48px 24px 32px; display: flex; flex-direction: column; gap: 20px">
+      <svg width="56" height="56" viewBox="110 100 290 320" role="img" aria-label="Levuche"><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+      <h1 style="margin: 24px 0 0; font-size: 34px; letter-spacing: -0.8px; line-height: 1.12">You’re in, Priya.</h1>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.9">Three quick steps and your site is live: claim a name, pick a starting layout, add your brand.</p>
+      <ol style="margin: 8px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5">
+        <li>Claim your handle</li><li>Pick a template</li><li>Set your brand</li>
+      </ol>
+      <a href="#" style="margin-top: auto; text-decoration: none; text-align: center; background: var(--lv-accent); color: var(--lv-on-accent); font-weight: 700; padding: 16px; border-radius: 999px">Create your site</a>
+    </div>
+
+    <div style="width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); padding: 32px 24px; display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; font-size: 14px; color: var(--lv-text-3)">Step 1 of 3</p>
+      <h1 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">Claim your handle</h1>
+      <p style="margin: 0; font-size: 15px; color: var(--lv-text-2); line-height: 1.55">It becomes your address. You can change it later; the old one forwards until someone else claims it.</p>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="hd-{{m.id}}" style="font-size: 14px; font-weight: 600">Handle</label>
+        <div style="display: flex; align-items: center; border: 2px solid var(--lv-success); border-radius: 12px; background: var(--lv-bg); overflow: hidden"><input id="hd-{{m.id}}" type="text" value="desiorigins" style="flex: 1; min-width: 0; min-height: 48px; border: 0; padding: 0 0 0 14px; font: inherit; font-size: 16px; color: var(--lv-text); background: transparent"><span style="padding: 0 14px; color: var(--lv-text-3); font-size: 14px">.levuche.page</span></div>
+        <p style="margin: 0; display: flex; gap: 6px; align-items: center; font-size: 13px; font-weight: 600; color: var(--lv-success)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>desiorigins is yours to claim</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid var(--lv-border); font-size: 13px">
+        <p style="margin: 0; font-weight: 600; color: var(--lv-text-3)">Other states</p>
+        <p style="margin: 0; color: var(--lv-danger); font-weight: 600">“desi” is taken. Try desi-origins or desioriginsofficial.</p>
+        <p style="margin: 0; color: var(--lv-danger); font-weight: 600">“paypa1” looks like a brand name. Brands can claim theirs with proof.</p>
+        <p style="margin: 0; color: var(--lv-text-2)">Use 3 to 30 letters, numbers or single hyphens.</p>
+      </div>
+      <button type="button" style="margin-top: auto; border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Claim desiorigins</button>
+    </div>
+
+    <div style="width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); padding: 32px 24px; display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; font-size: 14px; color: var(--lv-text-3)">Step 2 of 3</p>
+      <h1 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">Pick a starting layout</h1>
+      <p style="margin: 0; font-size: 15px; color: var(--lv-text-2)">Every section stays editable.</p>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+        <button type="button" aria-pressed="true" style="border: 2px solid var(--lv-primary); background: var(--lv-surface); border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 8px; font: inherit; color: var(--lv-text); text-align: left"><span style="height: 120px; border-radius: 10px; background: var(--lv-surface-2); display: flex; flex-direction: column; gap: 6px; padding: 10px; box-sizing: border-box"><span style="height: 18px; width: 18px; border-radius: 50%; background: var(--lv-accent)"></span><span style="height: 30px; border-radius: 6px; background: var(--lv-border)"></span><span style="height: 12px; border-radius: 6px; background: var(--lv-border)"></span></span><strong style="font-size: 14px">Reel creator</strong><span style="font-size: 12px; color: var(--lv-text-2)">Featured pack, reels, newsletter</span></button>
+        <button type="button" aria-pressed="false" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 8px; font: inherit; color: var(--lv-text); text-align: left"><span style="height: 120px; border-radius: 10px; background: var(--lv-surface-2)"></span><strong style="font-size: 14px">Links and shop</strong><span style="font-size: 12px; color: var(--lv-text-2)">Link tiles first, packs below</span></button>
+        <button type="button" aria-pressed="false" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 8px; font: inherit; color: var(--lv-text); text-align: left"><span style="height: 120px; border-radius: 10px; background: var(--lv-surface-2)"></span><strong style="font-size: 14px">Single pack</strong><span style="font-size: 12px; color: var(--lv-text-2)">One product, long page</span></button>
+        <button type="button" aria-pressed="false" style="border: 2px solid var(--lv-border); background: transparent; border-radius: 16px; padding: 10px; display: flex; flex-direction: column; gap: 8px; font: inherit; color: var(--lv-text); text-align: left"><span style="height: 120px; border-radius: 10px; background: var(--lv-surface-2)"></span><strong style="font-size: 14px">Minimal</strong><span style="font-size: 12px; color: var(--lv-text-2)">Bio, socials, contact</span></button>
+      </div>
+      <button type="button" style="margin-top: auto; border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Use Reel creator</button>
+    </div>
+
+    <div style="width: 390px; height: 844px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 32px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); padding: 32px 24px; display: flex; flex-direction: column; gap: 16px">
+      <p style="margin: 0; font-size: 14px; color: var(--lv-text-3)">Step 3 of 3</p>
+      <h1 style="margin: 0; font-size: 28px; letter-spacing: -0.5px">Set your brand</h1>
+      <div style="display: flex; gap: 12px; align-items: center"><span style="width: 56px; height: 56px; border-radius: 50%; background: var(--lv-surface-2); border: 2px dashed var(--lv-border)"></span><button type="button" style="border: 2px solid var(--lv-border); background: transparent; color: var(--lv-link); font: inherit; font-weight: 600; padding: 0 16px; min-height: 44px; border-radius: 999px">Upload logo</button></div>
+      <fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px"><legend style="font-size: 14px; font-weight: 600; margin-bottom: 8px">Accent colour</legend><div style="display: flex; gap: 10px; align-items: center"><button type="button" aria-label="Orange, selected" aria-pressed="true" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid var(--lv-text); background: #C2410C"></button><button type="button" aria-label="Teal" style="width: 40px; height: 40px; border-radius: 50%; border: 0; background: #0F766E"></button><button type="button" aria-label="Violet" style="width: 40px; height: 40px; border-radius: 50%; border: 0; background: #6D28D9"></button><button type="button" aria-label="Rose" style="width: 40px; height: 40px; border-radius: 50%; border: 0; background: #BE123C"></button><input type="text" aria-label="Custom hex colour" value="#C2410C" style="width: 96px; min-height: 40px; border: 2px solid var(--lv-border); border-radius: 10px; padding: 0 8px; font: inherit; font-size: 13px; color: var(--lv-text); background: var(--lv-bg)"></div></fieldset>
+      <label for="ft-{{m.id}}" style="font-size: 14px; font-weight: 600">Font</label>
+      <select id="ft-{{m.id}}" style="min-height: 48px; border: 2px solid var(--lv-border); border-radius: 12px; padding: 0 12px; font: inherit; font-size: 15px; color: var(--lv-text); background: var(--lv-bg)"><option>Sora</option><option>Fraunces</option><option>Inter</option></select>
+      <div data-site="{{m.id}}" style="background: var(--site-bg); border: 1px solid var(--site-border); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px; color: var(--site-text)"><span style="font-size: 12px; color: var(--site-text-2)">Live preview, follows light and dark</span><strong>Desi Origins</strong><span style="background: var(--site-accent); color: var(--site-on-accent); text-align: center; padding: 10px; border-radius: 999px; font-weight: 700; font-size: 14px">I’ll take it</span></div>
+      <p style="margin: 0; font-size: 12px; color: var(--lv-text-3)">We check contrast and adjust text colour on your accent automatically.</p>
+      <button type="button" style="margin-top: auto; border: 0; background: var(--lv-primary); color: var(--lv-on-primary); font: inherit; font-weight: 700; min-height: 52px; border-radius: 999px">Open the editor</button>
+    </div>
+  </div>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2110,"height":1880}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>levuche.com pricing and legal pages</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/16490de4fd085992f4b80feb1a7e5129">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 2480px; height: 2700px; box-sizing: border-box; display: flex; flex-direction: column; gap: 80px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+<div data-lv="{{m.id}}" style="display: flex; flex-direction: column; gap: 16px">
+  <p style="margin: 0; font-size: 26px; line-height: 1; font-weight: 700; color: var(--lv-text-3)">{{m.label}}</p>
+  <div style="display: flex; gap: 80px">
+
+    <div style="width: 1200px; height: 1250px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 24px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); display: flex; flex-direction: column">
+      <header style="width: 100%; max-width: 1120px; margin: 0 auto; box-sizing: border-box; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+        <a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--lv-text)"><svg width="40" height="40" viewBox="0 0 512 512" role="img" aria-label="Levuche"><rect width="512" height="512" rx="116" fill="#24257A"></rect><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.5px">levuche</span></a>
+        <nav aria-label="Main" style="display: flex; align-items: center; gap: 28px; font-size: 15px"><a href="#" style="text-decoration: none; color: var(--lv-text-2)">How it works</a><a href="#" style="text-decoration: none; color: var(--lv-text-2)">Features</a><a href="#" aria-current="page" style="text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; color: var(--lv-text); font-weight: 600">Pricing</a><a href="#" style="text-decoration: none; color: var(--lv-link); font-weight: 600">Sign in</a><a href="#" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 12px 20px; border-radius: 999px">Join the beta</a></nav>
+      </header>
+      <main style="width: 100%; max-width: 1120px; margin: 0 auto; box-sizing: border-box; padding: 28px 0 0; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px">
+          <div style="display: flex; flex-direction: column; gap: 10px; max-width: 640px"><h1 style="margin: 0; font-size: 48px; letter-spacing: -1.4px; line-height: 1.05">Pick a plan when you’re ready to sell</h1><p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--lv-text-2)">[One line on how pricing works during and after the beta.]</p></div>
+          <div role="radiogroup" aria-label="Billing period" style="display: flex; gap: 4px; background: var(--lv-surface-2); border-radius: 999px; padding: 4px"><button type="button" role="radio" aria-checked="true" style="border: 0; background: var(--lv-card); color: var(--lv-text); font: inherit; font-size: 14px; font-weight: 600; padding: 0 18px; min-height: 44px; border-radius: 999px">Monthly</button><button type="button" role="radio" aria-checked="false" style="border: 0; background: transparent; color: var(--lv-text-2); font: inherit; font-size: 14px; padding: 0 18px; min-height: 44px; border-radius: 999px">Yearly, save [N]%</button></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+          <article style="border: 1px solid var(--lv-border); border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+            <h2 style="margin: 0; font-size: 20px">[Plan 1]</h2>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 6px"><span style="font-size: 40px; font-weight: 700; letter-spacing: -1px; font-variant-numeric: tabular-nums">$[PRICE]</span><span style="font-size: 14px; color: var(--lv-text-2)">a month</span></p>
+            <p style="margin: 0; font-size: 14px; color: var(--lv-text-2)">[FEE]% per sale, plus Stripe fees</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px"><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Your handle.levuche.page site</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>[N] packs</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Inbox and short links</li></ul>
+            <a href="#" style="margin-top: auto; text-decoration: none; text-align: center; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; padding: 14px; border-radius: 999px">Join the beta</a>
+          </article>
+          <article style="border: 2px solid var(--lv-primary); background: var(--lv-surface); border-radius: 24px; padding: 23px; display: flex; flex-direction: column; gap: 14px">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px"><h2 style="margin: 0; font-size: 20px">[Plan 2]</h2><span style="background: var(--lv-accent); color: var(--lv-on-accent); font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px">Recommended</span></div>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 6px"><span style="font-size: 40px; font-weight: 700; letter-spacing: -1px; font-variant-numeric: tabular-nums">$[PRICE]</span><span style="font-size: 14px; color: var(--lv-text-2)">a month</span></p>
+            <p style="margin: 0; font-size: 14px; color: var(--lv-text-2)">[FEE]% per sale, plus Stripe fees</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px"><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Everything in [Plan 1]</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Your own domain</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Version history and rollback</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>API keys</li></ul>
+            <a href="#" style="margin-top: auto; text-decoration: none; text-align: center; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 700; padding: 16px; border-radius: 999px">Join the beta</a>
+          </article>
+          <article style="border: 1px solid var(--lv-border); border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+            <h2 style="margin: 0; font-size: 20px">[Plan 3]</h2>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 6px"><span style="font-size: 40px; font-weight: 700; letter-spacing: -1px; font-variant-numeric: tabular-nums">$[PRICE]</span><span style="font-size: 14px; color: var(--lv-text-2)">a month</span></p>
+            <p style="margin: 0; font-size: 14px; color: var(--lv-text-2)">[FEE]% per sale, plus Stripe fees</p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px"><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>Everything in [Plan 2]</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>[N] team members</li><li style="display: flex; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex: none; margin-top: 2px; color: var(--lv-success)"><path d="M5 12l5 5 9-10"></path></svg>[Extra feature]</li></ul>
+            <a href="#" style="margin-top: auto; text-decoration: none; text-align: center; border: 2px solid var(--lv-border); color: var(--lv-link); font-weight: 600; padding: 14px; border-radius: 999px">Join the beta</a>
+          </article>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 32px; align-items: start">
+          <section style="display: flex; flex-direction: column; gap: 12px">
+            <h2 style="margin: 0; font-size: 22px">Compare plans</h2>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px">
+              <thead><tr style="text-align: left; color: var(--lv-text-3)"><th scope="col" style="padding: 10px 8px; font-weight: 600">Feature</th><th scope="col" style="padding: 10px 8px; font-weight: 600">[Plan 1]</th><th scope="col" style="padding: 10px 8px; font-weight: 600">[Plan 2]</th><th scope="col" style="padding: 10px 8px; font-weight: 600">[Plan 3]</th></tr></thead>
+              <tbody style="color: var(--lv-text-2)">
+                <tr style="border-top: 1px solid var(--lv-border)"><th scope="row" style="padding: 11px 8px; text-align: left; font-weight: 600; color: var(--lv-text)">Packs</th><td style="padding: 11px 8px">[N]</td><td style="padding: 11px 8px">[N]</td><td style="padding: 11px 8px">[N]</td></tr>
+                <tr style="border-top: 1px solid var(--lv-border)"><th scope="row" style="padding: 11px 8px; text-align: left; font-weight: 600; color: var(--lv-text)">Fee per sale</th><td style="padding: 11px 8px">[FEE]%</td><td style="padding: 11px 8px">[FEE]%</td><td style="padding: 11px 8px">[FEE]%</td></tr>
+                <tr style="border-top: 1px solid var(--lv-border)"><th scope="row" style="padding: 11px 8px; text-align: left; font-weight: 600; color: var(--lv-text)">Own domain</th><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td></tr>
+                <tr style="border-top: 1px solid var(--lv-border)"><th scope="row" style="padding: 11px 8px; text-align: left; font-weight: 600; color: var(--lv-text)">Short links</th><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td></tr>
+                <tr style="border-top: 1px solid var(--lv-border); border-bottom: 1px solid var(--lv-border)"><th scope="row" style="padding: 11px 8px; text-align: left; font-weight: 600; color: var(--lv-text)">Team members</th><td style="padding: 11px 8px">[N]</td><td style="padding: 11px 8px">[N]</td><td style="padding: 11px 8px">[N]</td></tr>
+              </tbody>
+            </table>
+          </section>
+          <section style="display: flex; flex-direction: column; gap: 10px">
+            <h2 style="margin: 0 0 2px; font-size: 22px">Questions</h2>
+            <details open style="background: var(--lv-surface); border-radius: 16px; padding: 14px 16px"><summary style="font-weight: 600; font-size: 15px; cursor: pointer">What does Levuche take from a sale?</summary><p style="margin: 10px 0 0; font-size: 14px; line-height: 1.6; color: var(--lv-text-2)">[Answer from the billing terms.]</p></details>
+            <details style="background: var(--lv-surface); border-radius: 16px; padding: 14px 16px"><summary style="font-weight: 600; font-size: 15px; cursor: pointer">How do I get paid?</summary></details>
+            <details style="background: var(--lv-surface); border-radius: 16px; padding: 14px 16px"><summary style="font-weight: 600; font-size: 15px; cursor: pointer">Can I switch or cancel my plan?</summary></details>
+          </section>
+        </div>
+      </main>
+      <footer style="margin-top: auto; border-top: 1px solid var(--lv-border)"><div style="max-width: 1120px; margin: 0 auto; padding: 22px 0; display: flex; justify-content: space-between; gap: 20px; font-size: 14px; color: var(--lv-text-3)"><p style="margin: 0">© 2026 Jagodana LLC. Levuche is a Jagodana product.</p><nav aria-label="Legal" style="display: flex; gap: 20px"><a href="#" style="color: var(--lv-link)">Terms</a><a href="#" style="color: var(--lv-link)">Privacy</a><a href="#" style="color: var(--lv-link)">Pack terms</a><a href="#" style="color: var(--lv-link)">Security</a></nav></div></footer>
+    </div>
+
+    <div style="width: 1200px; height: 1250px; box-sizing: border-box; border: 1px solid var(--lv-border); border-radius: 24px; overflow: hidden; background: var(--lv-bg); color: var(--lv-text); display: flex; flex-direction: column">
+      <header style="width: 100%; max-width: 1120px; margin: 0 auto; box-sizing: border-box; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+        <a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--lv-text)"><svg width="40" height="40" viewBox="0 0 512 512" role="img" aria-label="Levuche"><rect width="512" height="512" rx="116" fill="#24257A"></rect><g transform="translate(0 -26)"><path d="M190 204 C190 140 322 140 322 204" fill="none" stroke="#FFB627" stroke-width="20" stroke-linecap="round"></path><path d="M170 190 H342 Q370 190 373 218 L384 342 Q387 384 345 384 H240 L176 432 L188 384 H167 Q125 384 128 342 L139 218 Q142 190 170 190 Z" fill="#FFB627"></path><path d="M204 290 L244 328 L310 254" fill="none" stroke="#24257A" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.5px">levuche</span></a>
+        <nav aria-label="Main" style="display: flex; align-items: center; gap: 28px; font-size: 15px"><a href="#" style="text-decoration: none; color: var(--lv-text-2)">How it works</a><a href="#" style="text-decoration: none; color: var(--lv-text-2)">Features</a><a href="#" style="text-decoration: none; color: var(--lv-text-2)">Pricing</a><a href="#" style="text-decoration: none; color: var(--lv-link); font-weight: 600">Sign in</a><a href="#" style="text-decoration: none; background: var(--lv-primary); color: var(--lv-on-primary); font-weight: 600; padding: 12px 20px; border-radius: 999px">Join the beta</a></nav>
+      </header>
+      <div style="width: 100%; max-width: 1120px; margin: 0 auto; box-sizing: border-box; padding: 28px 0 0; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; align-items: start">
+        <aside style="display: flex; flex-direction: column; gap: 20px">
+          <nav aria-label="Legal and security" style="display: flex; flex-direction: column; gap: 2px; font-size: 15px">
+            <p style="margin: 0 0 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: var(--lv-text-3)">LEGAL</p>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Terms of service</a>
+            <a href="#" aria-current="page" style="text-decoration: none; color: var(--lv-text); background: var(--lv-surface-2); font-weight: 600; padding: 10px 12px; border-radius: 10px">Privacy policy</a>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Cookie policy</a>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Pack terms for buyers</a>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Creator rules</a>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Copyright and takedowns</a>
+            <p style="margin: 14px 0 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: var(--lv-text-3)">TRUST</p>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Security</a>
+            <a href="#" style="text-decoration: none; color: var(--lv-text-2); padding: 10px 12px; border-radius: 10px">Subprocessors</a>
+          </nav>
+          <div style="border: 1px solid var(--lv-border); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; font-weight: 700; font-size: 15px">Found a security issue?</p><p style="margin: 0; font-size: 13px; line-height: 1.55; color: var(--lv-text-2)">Tell us privately at [SECURITY CONTACT]. [Disclosure policy line.]</p></div>
+        </aside>
+        <article style="max-width: 68ch; display: flex; flex-direction: column; gap: 18px">
+          <p style="margin: 0; font-size: 14px; color: var(--lv-text-3)"><a href="#" style="color: var(--lv-link)">Legal</a> / Privacy policy</p>
+          <h1 style="margin: 0; font-size: 44px; letter-spacing: -1.2px; line-height: 1.08">Privacy policy</h1>
+          <p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; color: var(--lv-text-2)"><span>Last updated [DATE]</span><span>Effective [DATE]</span><a href="#" style="color: var(--lv-link)">Earlier versions</a><a href="#" style="color: var(--lv-link)">Download PDF</a></p>
+          <section style="background: var(--lv-surface); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px">
+            <h2 style="margin: 0; font-size: 18px">The short version</h2>
+            <ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.55; color: var(--lv-text-2)"><li>[Plain-language summary point one.]</li><li>[Plain-language summary point two.]</li><li>[Plain-language summary point three.]</li></ul>
+            <p style="margin: 0; font-size: 13px; color: var(--lv-text-3)">This summary isn’t the policy. The full text below is what applies.</p>
+          </section>
+          <nav aria-label="On this page" style="display: flex; flex-wrap: wrap; gap: 8px"><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-size: 14px; font-weight: 600; padding: 8px 14px; border-radius: 999px">1. [Section]</a><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-size: 14px; font-weight: 600; padding: 8px 14px; border-radius: 999px">2. [Section]</a><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-size: 14px; font-weight: 600; padding: 8px 14px; border-radius: 999px">3. [Section]</a><a href="#" style="text-decoration: none; border: 2px solid var(--lv-border); color: var(--lv-link); font-size: 14px; font-weight: 600; padding: 8px 14px; border-radius: 999px">Contact</a></nav>
+          <h2 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.3px">1. [Section title]</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.7; color: var(--lv-text-2)">[Legal text. Body is set at 17 px with 1.7 line height and held to about 68 characters a line, so long policies stay readable.]</p>
+          <h2 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.3px">2. [Section title]</h2>
+          <table style="width: 100%; border-collapse: collapse; font-size: 14px">
+            <caption style="text-align: left; font-size: 14px; color: var(--lv-text-3); padding-bottom: 8px">[Table caption]</caption>
+            <thead><tr style="text-align: left; color: var(--lv-text-3)"><th scope="col" style="padding: 10px 8px; font-weight: 600">[Column]</th><th scope="col" style="padding: 10px 8px; font-weight: 600">[Column]</th><th scope="col" style="padding: 10px 8px; font-weight: 600">[Column]</th></tr></thead>
+            <tbody style="color: var(--lv-text-2)"><tr style="border-top: 1px solid var(--lv-border)"><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td></tr><tr style="border-top: 1px solid var(--lv-border); border-bottom: 1px solid var(--lv-border)"><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td><td style="padding: 11px 8px">[Value]</td></tr></tbody>
+          </table>
+          <h2 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.3px">Contact</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.7; color: var(--lv-text-2)">[Privacy contact and company address.]</p>
+        </article>
+      </div>
+      <footer style="margin-top: auto; border-top: 1px solid var(--lv-border)"><div style="max-width: 1120px; margin: 0 auto; padding: 22px 0; display: flex; justify-content: space-between; gap: 20px; font-size: 14px; color: var(--lv-text-3)"><p style="margin: 0">© 2026 Jagodana LLC. Levuche is a Jagodana product.</p><nav aria-label="Legal" style="display: flex; gap: 20px"><a href="#" style="color: var(--lv-link)">Terms</a><a href="#" style="color: var(--lv-link)">Privacy</a><a href="#" style="color: var(--lv-link)">Pack terms</a><a href="#" style="color: var(--lv-link)">Security</a></nav></div></footer>
+    </div>
+  </div>
+</div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2480,"height":2700}}'>
+class Component extends DCLogic {
+renderVals() { return { modes: [{ id: 'light', label: 'Light' }, { id: 'dark', label: 'Dark' }] }; }
+}
+</script>
+</body>
+</html>
