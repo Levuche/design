@@ -1,4 +1,4 @@
-/* Levuche design tokens v1.0, locked 2026-11-25. Product UI uses only --lv-*; creator sites use only --site-*. */
+/* Levuche design tokens v1.1, 2026-11-25 (v1.1 adds --site-danger and --site-danger-bg). Product UI uses only --lv-*; creator sites use only --site-*. */
 [data-lv="light"]{
   --lv-bg:#FFFFFF; --lv-surface:#F6F7FD; --lv-surface-2:#EEF0FB; --lv-card:#FFFFFF; --lv-border:#DDE0F3;
   --lv-text:#14154A; --lv-text-2:#3A3B5C; --lv-text-3:#5B5D7E; --lv-link:#24257A;
@@ -24,11 +24,13 @@
   --site-bg:#FFFFFF; --site-surface:#FFF4EC; --site-surface-2:#FFE6D4; --site-border:#F1DFD2;
   --site-text:#1A1325; --site-text-2:#4B4458; --site-link:#9A3412;
   --site-accent:#C2410C; --site-on-accent:#FFFFFF; --site-band:#C2410C; --site-on-band:#FFFFFF;
-  --site-notice:#FFF4DC; --site-on-notice:#3D2A00; color-scheme:light;
+  --site-notice:#FFF4DC; --site-on-notice:#3D2A00;
+  --site-danger:#B91C1C; --site-danger-bg:#FEF2F2; color-scheme:light;
 }
 [data-site="dark"]{
   --site-bg:#0F1020; --site-surface:#1B1C33; --site-surface-2:#2A2B4A; --site-border:#23244A;
   --site-text:#F4F4F8; --site-text-2:#C2C3D8; --site-link:#FFB27A;
   --site-accent:#FF8A3D; --site-on-accent:#0F1020; --site-band:#FF8A3D; --site-on-band:#0F1020;
-  --site-notice:#FFF4DC; --site-on-notice:#3D2A00; color-scheme:dark;
+  --site-notice:#FFF4DC; --site-on-notice:#3D2A00;
+  --site-danger:#FCA5A5; --site-danger-bg:#2A1220; color-scheme:dark;
 }
